@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abacus</title>
+    <link rel="stylesheet" href="styles_abacus.css">
+    <link rel="icon" type="image/png" href="/images/math_pathways_logo.png">
+
+</head>
+<body>
+
+<div class="title-row">
+  <h1 class="abacus-title">The Abacus</h1>
+
+  <button id="infoBtn" class="info-btn" aria-label="Open instructions">
+    i
+  </button>
+</div>
+
+<div class="blob-container">
+  <div class="blob blue1"></div>
+  <div class="blob blue2"></div>
+  <div class="blob blue3"></div>
+
+  <div class="blob purple1"></div>
+  <div class="blob purple2"></div>
+  <div class="blob purple3"></div>
+
+  <div class="blob mix1"></div>
+  <div class="blob mix2"></div>
+</div>
+
+<div class="main-content">
+
+  <div class="abacus-wrapper">
+
+    <div class="abacus" id="abacus">
+
+      <div class="rod" data-place="1000000">
+        <div class="top-bead bead black" data-value="5"></div>
+        <div class="divider"></div>
+        <div class="bottom-bead bead red" data-value="1"></div>
+        <div class="bottom-bead bead yellow" data-value="1"></div>
+        <div class="bottom-bead bead green" data-value="1"></div>
+        <div class="bottom-bead bead blue" data-value="1"></div>
+      </div>
+
+      <div class="rod" data-place="100000">
+        <div class="top-bead bead black" data-value="5"></div>
+        <div class="divider"></div>
+        <div class="bottom-bead bead red" data-value="1"></div>
+        <div class="bottom-bead bead yellow" data-value="1"></div>
+        <div class="bottom-bead bead green" data-value="1"></div>
+        <div class="bottom-bead bead blue" data-value="1"></div>
+      </div>
+
+      <div class="rod" data-place="10000">
+        <div class="top-bead bead black" data-value="5"></div>
+        <div class="divider"></div>
+        <div class="bottom-bead bead red" data-value="1"></div>
+        <div class="bottom-bead bead yellow" data-value="1"></div>
+        <div class="bottom-bead bead green" data-value="1"></div>
+        <div class="bottom-bead bead blue" data-value="1"></div>
+      </div>
+
+      <div class="rod" data-place="1000">
+        <div class="top-bead bead black" data-value="5"></div>
+        <div class="divider"></div>
+        <div class="bottom-bead bead red" data-value="1"></div>
+        <div class="bottom-bead bead yellow" data-value="1"></div>
+        <div class="bottom-bead bead green" data-value="1"></div>
+        <div class="bottom-bead bead blue" data-value="1"></div>
+      </div>
+
+      <div class="rod" data-place="100">
+        <div class="top-bead bead black" data-value="5"></div>
+        <div class="divider"></div>
+        <div class="bottom-bead bead red" data-value="1"></div>
+        <div class="bottom-bead bead yellow" data-value="1"></div>
+        <div class="bottom-bead bead green" data-value="1"></div>
+        <div class="bottom-bead bead blue" data-value="1"></div>
+      </div>
+
+      <div class="rod" data-place="10">
+        <div class="top-bead bead black" data-value="5"></div>
+        <div class="divider"></div>
+        <div class="bottom-bead bead red" data-value="1"></div>
+        <div class="bottom-bead bead yellow" data-value="1"></div>
+        <div class="bottom-bead bead green" data-value="1"></div>
+        <div class="bottom-bead bead blue" data-value="1"></div>
+      </div>
+
+      <div class="rod" data-place="1">
+        <div class="top-bead bead black" data-value="5"></div>
+        <div class="divider"></div>
+        <div class="bottom-bead bead red" data-value="1"></div>
+        <div class="bottom-bead bead yellow" data-value="1"></div>
+        <div class="bottom-bead bead green" data-value="1"></div>
+        <div class="bottom-bead bead blue" data-value="1"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="display">
+    <span id="valueDisplay">0</span>
+  </div>
+
+</div>
+
+<div id="infoModal" class="modal hidden">
+
+  <div class="modal-content">
+
+    <!-- TITLE (centered via CSS later) -->
+    <h2 class="modal-title">How to Use the Abacus</h2>
+
+    <!-- OUTER FRAME (visual encasing layer) -->
+    <div class="instructions-frame">
+
+      <!-- SCROLL PANEL (actual scrolling happens here) -->
+      <div class="instructions-panel">
+
+        <!-- TEXT CONTENT -->
+        <div class="instructions">
+
+          <p>
+            To add and subtract using the abacus, move beads toward the center beam to represent values.
+            Beads touching the beam are counted, while beads away from it are not.
+            Each column represents a place value (ones, tens, hundreds, etc.).
+          </p>
+
+          <p>
+            For example, if you want to add 851 + 235, you first represent 851 on the abacus.
+            In the ones column, move 1 bottom bead. In the tens column, move 1 top bead.
+            In the hundreds column, move 1 top bead and 3 bottom beads.
+            Then add 235 using the same process. If a column exceeds 9, you carry the extra value into the next column.
+            The result is 1086.
+          </p>
+
+          <h3>How do I subtract?</h3>
+
+          <p>
+            You start with the larger number already set on the abacus and subtract by removing beads from right to left.
+            If a column does not have enough value, you borrow from the next column to the left.
+          </p>
+
+          <h3>Can I multiply or divide?</h3>
+
+          <p>
+            Yes, but these operations are performed through repeated addition and subtraction.
+          </p>
+
+          <p>
+            Decimal values can also be represented by shifting place values into fractional columns.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+  <button id="closeModal" class="close-btn" aria-label="Close instructions">
+    ×
+  </button>
+
+  </div>
+
+</div>
+
+<script>
+const rods = document.querySelectorAll(".rod");
+const display = document.getElementById("valueDisplay");
+
+// Attach click listeners to all beads
+document.querySelectorAll(".bead").forEach(bead => {
+  bead.addEventListener("click", () => {
+    const rod = bead.parentElement;
+
+    // TOP BEAD (5 value)
+    if (bead.classList.contains("top-bead")) {
+      bead.classList.toggle("active");
+    }
+
+    // BOTTOM BEADS (1 value each)
+    if (bead.classList.contains("bottom-bead")) {
+      const siblings = Array.from(rod.querySelectorAll(".bottom-bead"));
+
+      const index = siblings.indexOf(bead);
+
+      // Activate up to this bead (abacus rule)
+      if (!bead.classList.contains("active")) {
+        // Activate all beads from 0 → index
+        for (let i = 0; i <= index; i++) {
+          siblings[i].classList.add("active");
+        }
+      } else {
+        // Deactivate this bead and all above it
+        for (let i = index; i < siblings.length; i++) {
+          siblings[i].classList.remove("active");
+        }
+      }
+    }
+
+    updateValue();
+  });
+});
+
+function updateValue() {
+  let total = 0;
+
+  rods.forEach(rod => {
+    const place = parseInt(rod.dataset.place);
+
+    let value = 0;
+
+    // Top bead (5)
+    const top = rod.querySelector(".top-bead");
+    if (top.classList.contains("active")) {
+      value += 5;
+    }
+
+    // Bottom beads (1 each, but cumulative)
+    const bottomBeads = rod.querySelectorAll(".bottom-bead");
+    bottomBeads.forEach(bead => {
+      if (bead.classList.contains("active")) {
+        value += 1;
+      }
+    });
+
+    total += value * place;
+  });
+
+  display.textContent = total;
+}
+
+const infoBtn = document.getElementById("infoBtn");
+const modal = document.getElementById("infoModal");
+const closeBtn = document.getElementById("closeModal");
+
+infoBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+  }
+});
+
+</script>
+	
+</body>
+</html>

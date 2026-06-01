@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathways</title>
+
+    <link rel="stylesheet" href="styles_pathways.css">
+    <link rel="icon" type="image/png" href="/images/math_pathways_logo.png">
+
+    <!-- Marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- MathJax -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script
+        id="MathJax-script"
+        async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+</head>
+
+<body>
+
+<!-- BACKGROUND BLOBS -->
+<div class="blob-container">
+
+    <div class="blob blue1"></div>
+    <div class="blob blue2"></div>
+    <div class="blob blue3"></div>
+
+    <div class="blob purple1"></div>
+    <div class="blob purple2"></div>
+    <div class="blob purple3"></div>
+
+    <div class="blob mix1"></div>
+    <div class="blob mix2"></div>
+
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar collapsed" id="sidebar">
+
+        <h2>Select a Pathway</h2>
+
+        <p class="sidebar-subtitle">
+            Learn more about how math can be used in various careers.
+        </p>
+
+        <div class="menu">
+            <button class="soft-blue-hover" data-branch="introduction">💡 Introduction</button>
+            <button class="soft-blue-hover" data-branch="aerospace-engineering">🚀 Aerospace Engineering</button>
+            <button class="soft-blue-hover" data-branch="archaeology">⚱️ Archaeology</button>
+            <button class="soft-blue-hover" data-branch="art">🎥 Animation</button>
+            <button class="soft-blue-hover" data-branch="astronomy">🪐 Astronomy</button>
+            <button class="soft-blue-hover" data-branch="automobile-engineering">🏍️ Automobile Engineering</button>
+            <button class="soft-blue-hover" data-branch="biotechnology">🧬 Biotechnology</button>
+            <button class="soft-blue-hover" data-branch="botany">🌸 Botany</button>
+            <button class="soft-blue-hover" data-branch="chemical-engineering">🧪 Chemical Engineering</button>
+            <button class="soft-blue-hover" data-branch="civil-engineering">🏗️ Civil Engineering</button>
+            <button class="soft-blue-hover" data-branch="computer-science">🖥️ Computer Science</button>
+            <button class="soft-blue-hover" data-branch="cryptography">🪙 Cryptography</button>
+            <button class="soft-blue-hover" data-branch="education">🎓 Education</button>
+            <button class="soft-blue-hover" data-branch="electrical-engineering">🔋 Electrical Engineering</button>
+            <button class="soft-blue-hover" data-branch="fashion">🧥 Fashion</button>
+            <button class="soft-blue-hover" data-branch="finance">💸 Finance</button>
+            <button class="soft-blue-hover" data-branch="fitness">💪🏾 Fitness</button>
+            <button class="soft-blue-hover" data-branch="forensics">🫆 Forensics</button>
+            <button class="soft-blue-hover" data-branch="home-trades">🏡 Home Trades</button>
+            <button class="soft-blue-hover" data-branch="insurance">🛡️ Insurance</button>
+            <button class="soft-blue-hover" data-branch="management">👔 Management</button>
+            <button class="soft-blue-hover" data-branch="marketing">📢 Marketing</button>
+            <button class="soft-blue-hover" data-branch="medicine">🩺 Medicine</button>
+            <button class="soft-blue-hover" data-branch="meteorology">☄️ Meteorology</button>
+            <button class="soft-blue-hover" data-branch="music">📀 Music</button>
+            <button class="soft-blue-hover" data-branch="naval-engineering">🐋 Naval Engineering</button>
+            <button class="soft-blue-hover" data-branch="neuroscience">🧠 Neuroscience</button>
+            <button class="soft-blue-hover" data-branch="philosophy">🦉 Philosophy</button>
+            <button class="soft-blue-hover" data-branch="politics">⚖️ Politics</button>
+            <button class="soft-blue-hover" data-branch="sports">🏈 Sports</button>
+
+        </div>
+
+    </div>
+
+    <!-- DARK OVERLAY -->
+    <div class="focus-overlay"></div>
+
+    <!-- TOGGLE BUTTON -->
+    <button class="soft-blue-hover" id="toggleSidebar">☰</button>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+
+        <div class="timeline-wrapper">
+
+            <button id="prevBtn">◀</button>
+
+                <!-- CONTENT BOX -->
+                <div class="card-container">
+                    <div class="content-shell">
+                        <div class="content" id="content"></div>
+                            <div class="dot-container">
+                                <span class="dot active"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                    </div>
+                </div>
+
+            <button id="nextBtn">▶</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+let pages = [];
+let currentPage = 0;
+let loadToken = 0;
+
+// ================================
+// ELEMENTS
+// ================================
+const sidebar = document.getElementById("sidebar");
+const toggleBtn = document.getElementById("toggleSidebar");
+const buttons = document.querySelectorAll(".menu button");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const contentEl = document.getElementById("content");
+const dotContainer = document.querySelector(".dot-container");
+
+// ================================
+// PATH MAP
+// ================================
+const pathMap = {
+    "introduction": "markdown/landing_pathway.md",
+    "aerospace-engineering": "markdown/aerospace_engineering_pathway.md",
+    "archaeology": "markdown/archaeology_pathway.md",
+    "art": "markdown/art_pathway.md",
+    "automobile-engineering": "markdown/automobile_engineering_pathway.md",
+    "astronomy": "markdown/astronomy_pathway.md",
+    "biotechnology": "markdown/biotechnology_pathway.md",
+    "botany": "markdown/botany_pathway.md",
+    "chemical-engineering": "markdown/chemical_engineering_pathway.md",
+    "civil-engineering": "markdown/civil_engineering_pathway.md",
+    "computer-science": "markdown/computer_science_pathway.md",
+    "cryptography": "markdown/cryptography_pathway.md",
+    "education": "markdown/education_pathway.md",
+    "electrical-engineering": "markdown/electrical_engineering_pathway.md",
+    "fashion": "markdown/fashion_pathway.md",
+    "finance": "markdown/finance_pathway.md",
+    "fitness": "markdown/fitness_pathway.md",
+    "forensics": "markdown/forensics_pathway.md",
+    "home-trades": "markdown/home_trades_pathway.md",
+    "insurance": "markdown/insurance_pathway.md",
+    "management": "markdown/management_pathway.md",
+    "marketing": "markdown/marketing_pathway.md",
+    "medicine": "markdown/medicine_pathway.md",
+    "meteorology": "markdown/meteorology_pathway.md",
+    "music": "markdown/music_pathway.md",
+    "naval-engineering": "markdown/naval_engineering_pathway.md",
+    "neuroscience": "markdown/neuroscience_pathway.md",
+    "philosophy": "markdown/philosophy_pathway.md",
+    "politics": "markdown/politics_pathway.md",
+    "sports": "markdown/sports_pathway.md",
+};
+
+// ================================
+// LOAD MARKDOWN
+// ================================
+function loadMarkdown(path) {
+
+    const token = ++loadToken;
+
+    fetch(path)
+        .then(res => res.text())
+        .then(text => {
+
+            if (token !== loadToken) return;
+
+            pages = text
+                .split(/--- PAGE ---/i)
+                .map(p => p.trim())
+                .filter(Boolean);
+
+            currentPage = 0;
+
+            renderDots();            // 🔥 IMPORTANT: build dots first
+            renderPage(currentPage); // then render page
+        })
+        .catch(err => {
+            console.error("Markdown load error:", err);
+        });
+}
+
+// ================================
+// RENDER PAGE
+// ================================
+function renderPage(index) {
+    if (!pages.length || !pages[index]) return;
+
+    let text = pages[index];
+    const mathBlocks = [];
+
+    // protect display math
+    text = text.replace(/\$\$[\s\S]+?\$\$/g, match => {
+        mathBlocks.push({ type: "display", content: match });
+        return `@@MATH${mathBlocks.length - 1}@@`;
+    });
+
+    // protect inline math
+    text = text.replace(/\$(?!\$)[\s\S]+?\$/g, match => {
+        mathBlocks.push({ type: "inline", content: match });
+        return `@@MATH${mathBlocks.length - 1}@@`;
+    });
+
+    // markdown parse
+    text = marked.parse(text);
+
+    // restore math
+    mathBlocks.forEach((block, i) => {
+
+        if (block.type === "display") {
+            text = text.replaceAll(
+                `@@MATH${i}@@`,
+                `<div class="math-display">${block.content}</div>`
+            );
+        } else {
+            text = text.replaceAll(
+                `@@MATH${i}@@`,
+                block.content
+            );
+        }
+    });
+
+    contentEl.innerHTML = text;
+    contentEl.scrollTop = 0;
+
+    if (window.MathJax) {
+        MathJax.typesetPromise([contentEl]);
+    }
+
+    updateButtons();
+    setActiveDot(currentPage); // 🔥 sync dots every render
+}
+
+// ================================
+// DOT SYSTEM
+// ================================
+function renderDots() {
+    dotContainer.innerHTML = "";
+
+    for (let i = 0; i < pages.length; i++) {
+        const dot = document.createElement("span");
+        dot.classList.add("dot");
+
+        if (i === currentPage) {
+            dot.classList.add("active");
+        }
+
+        dot.addEventListener("click", () => {
+            currentPage = i;
+            renderPage(currentPage);
+        });
+
+        dotContainer.appendChild(dot);
+    }
+}
+
+function setActiveDot(index) {
+    const dots = document.querySelectorAll(".dot");
+
+    dots.forEach((dot, i) => {
+        dot.classList.remove("active");
+        if (i === index) {
+            dot.classList.add("active");
+        }
+    });
+}
+
+// ================================
+// BUTTON STATE
+// ================================
+function updateButtons() {
+    prevBtn.disabled = currentPage === 0;
+    nextBtn.disabled = currentPage === pages.length - 1;
+}
+
+// ================================
+// NAVIGATION
+// ================================
+prevBtn.addEventListener("click", () => {
+    if (currentPage > 0) {
+        currentPage--;
+        renderPage(currentPage);
+    }
+});
+
+nextBtn.addEventListener("click", () => {
+    if (currentPage < pages.length - 1) {
+        currentPage++;
+        renderPage(currentPage);
+    }
+});
+
+// ================================
+// SIDEBAR TOGGLE
+// ================================
+toggleBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("collapsed");
+});
+
+// ================================
+// MENU BUTTONS
+// ================================
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        const branch = btn.dataset.branch;
+        const path = pathMap[branch];
+
+        if (!path) return;
+
+        buttons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        loadMarkdown(path);
+    });
+});
+
+// ================================
+// INITIAL LOAD
+// ================================
+loadMarkdown("markdown/landing_pathway.md");
+
+});
+</script>
+
+</body>
+</html>

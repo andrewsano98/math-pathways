@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles_calculator.css">
+    <link rel="icon" type="image/png" href="/images/math_pathways_logo.png">
+
+</head>
+<body>
+
+    <div class="calculator">
+    <input type="text" id="display" disabled>
+
+		<div class="buttons">
+			<!-- Row 1 -->
+			<button class = "special" onclick="clearDisplay()">C</button>
+			<button class = "special" onclick="press('(')">(</button>
+			<button class = "special" onclick="press(')')">)</button>
+			<button class = "special" onclick="backspace()">⌫</button>
+
+			<!-- Row 2 -->
+			<button class = "special" onclick="press('√(')">√</button>
+			<button class = "special" onclick="press('**')">^</button>
+			<button class = "special" onclick="press('π')">π</button>
+			<button class = "special" onclick="press('%')">%</button>
+
+			<!-- Row 3 -->
+			<button class = "num" onclick="press('7')">7</button>
+			<button class = "num" onclick="press('8')">8</button>
+			<button class = "num" onclick="press('9')">9</button>
+			<button class = "op" onclick="press('/')">÷</button>
+
+			<!-- Row 4 -->
+			<button class = "num" onclick="press('4')">4</button>
+			<button class = "num" onclick="press('5')">5</button>
+			<button class = "num" onclick="press('6')">6</button>
+			<button class = "op" onclick="press('*')">×</button>
+
+			<!-- Row 5 -->
+			<button class = "num" onclick="press('1')">1</button>
+			<button class = "num" onclick="press('2')">2</button>
+			<button class = "num" onclick="press('3')">3</button>
+			<button class = "op" onclick="press('-')">−</button>
+
+			<!-- Row 6 -->
+			<button class = "num" onclick="press('0')">0</button>
+			<button class = "num" onclick="press('.')">.</button>
+			<button class = "equals" onclick="calculate()">=</button>
+			<button class = "op" onclick="press('+')">+</button>
+
+		</div>
+	</div>
+	
+    <script>
+        function press(value) {
+            document.getElementById("display").value += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById("display").value = "";
+        }
+		
+		function backspace() {
+			let display = document.getElementById("display");
+			display.value = display.value.slice(0, -1);
+
+		}
+
+		let justCalculated = false;
+
+		function press(value) {
+			let display = document.getElementById("display");
+
+			// If we just calculated, clear before typing new input
+			if (justCalculated) {
+				display.value = "";
+				justCalculated = false;
+			}
+
+			display.value += value;
+		}
+
+		function calculate() {
+			let display = document.getElementById("display");
+
+			try {
+				let expression = display.value;
+
+				// Convert symbols into JavaScript-understandable math
+				expression = expression.replace(/π/g, "Math.PI");
+				expression = expression.replace(/√/g, "Math.sqrt");
+				expression = expression.replace(/\^/g, "**");
+
+				display.value = eval(expression);
+				justCalculated = true;
+
+			} catch {
+				alert("Error");
+			}
+		}
+
+		function clearDisplay() {
+			document.getElementById("display").value = "";
+			justCalculated = false;
+		}
+
+		function backspace() {
+			let display = document.getElementById("display");
+			display.value = display.value.slice(0, -1);
+		}
+		
+		
+    </script>
+
+</body>
+</html>

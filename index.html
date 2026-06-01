@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Pathways</title>
+    <link rel="stylesheet" href="styles_homepage.css">
+    <link rel="icon" type="image/png" href="/images/math_pathways_logo.png">
+</head>
+
+<body>
+
+    <!-- GLASS NAVBAR -->
+    <header class="glass-nav">
+
+        <div class="nav-main">
+
+            <div class="logo">
+                <img src="/images/math_pathways_logo.png" alt="Math Pathways Logo">
+            </div>
+
+            <div class="notification-box" id="notificationBox">
+                <p>📢</p>
+                <p> Welcome! This website is brand new, so please excuse us while we iron out the details.</p>
+                <button class="close-btn" onclick="closeNotification()">×</button>
+            </div>
+
+            <div class="nav-links">
+                <a href="about.html" class="nav-btn">About</a>
+                <a href="contact.html" class="nav-btn">Contact</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- HERO VIDEO -->
+    <section class="hero-video">
+        <video autoplay muted loop playsinline>
+            <source src="/images/math_background.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay">
+            <div class="hero-text">
+                <h1>Welcome to Math Pathways!</h1>
+                <h2>Learn more about math and how it can be useful in your career.</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- RIBBON-->
+<div class="mid-band">
+    <section class="ribbon">
+        <div class="quote-wrapper">
+            <p id="quote-text" class="quote"></p>
+            <p id="quote-author" class="quote-author"></p>
+        </div>
+    </section>
+</div>
+
+    <!-- CARD SECTION -->
+    <section class="card-section">
+
+        <div class="card-lane">
+            <a href="mathematicians.html" class="card-link">
+                <div class="card">
+                    <img class="card-icon icon-blue" src="images/gallery.png" alt="icon">
+                    <p>Visit the gallery of mathematicians!</p>
+
+                    <svg class="ring-svg" viewBox="0 0 100 100">
+                        <circle class="ring-path" cx="50" cy="50" r="46"></circle>
+                    </svg>
+                </div>
+            </a>
+        </div>
+
+        <div class="card-lane">
+            <a href="pathways.html" class="card-link">
+                <div class="card orange">
+                    <img class="card-icon icon-orange" src="images/hobbies.png" alt="icon">
+                    <p>See how math can be useful in your life!</p>
+
+                    <svg class="ring-svg" viewBox="0 0 100 100">
+                        <circle class="ring-path" cx="50" cy="50" r="46"></circle>
+                    </svg>
+                </div>
+            </a>
+        </div>
+
+        <div class="card-lane">
+            <a href="learn_more.html" class="card-link">
+                <div class="card green">
+                    <img class="card-icon icon-green" src="images/learn_more.png" alt="icon">
+                    <p>Learn more about advanced math topics!</p>
+
+                    <svg class="ring-svg" viewBox="0 0 100 100">
+                        <circle class="ring-path" cx="50" cy="50" r="46"></circle>
+                    </svg>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- BOTTOM RIBBON -->
+    <footer class="ribbon">
+        <p>© Math Pathways 2026</p>
+    </footer>
+
+</body>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const quotes = [
+        {
+            text: "Discovery is a child's privilege.",
+            author: "Alexander Grothendieck"
+        },
+        {
+            text: "You don't educate people by telling them useful things; you educate people by telling them interesting things.",
+            author: "John Conway"
+        },
+        {
+            text: "Logic is the foundation of the certainty of all the knowledge we acquire.",
+            author: "Leonhard Euler"
+        },
+        {
+            text: "We will always have STEM with us. Some things will drop out of the public eye and will go away, but there will always be science, engineering, and technology. And there will always, always be mathematics.",
+            author: "Katherine Johnson"
+        },
+        {
+            text: "Sometimes it is the people no one can imagine anything of who do the things no one can imagine.",
+            author: "Alan Turing"
+        },
+        {
+            text: "We must know. We will know.",
+            author: "David Hilbert"
+        }
+    ];
+
+    let index = 0;
+
+    const quoteEl = document.getElementById("quote-text");
+    const authorEl = document.getElementById("quote-author");
+
+    function updateQuote() {
+        quoteEl.style.opacity = 0;
+        authorEl.style.opacity = 0;
+
+        setTimeout(() => {
+            index = (index + 1) % quotes.length;
+
+            quoteEl.textContent = quotes[index].text;
+            authorEl.textContent = "— " + quotes[index].author;
+
+            quoteEl.style.opacity = 1;
+            authorEl.style.opacity = 1;
+        }, 250);
+    }
+
+    // initial load
+    quoteEl.textContent = quotes[0].text;
+    authorEl.textContent = "— " + quotes[0].author;
+
+    setInterval(updateQuote, 5000);
+});
+
+function closeNotification() {
+    const box = document.getElementById("notificationBox");
+    box.style.display = "none";
+}
+
+</script>
+
+</html>

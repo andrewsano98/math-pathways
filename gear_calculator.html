@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascaline</title>
+    <link rel="stylesheet" href="styles_gear_calculator.css">
+    <link rel="icon" type="image/png" href="/images/math_pathways_logo.png">
+
+</head>
+
+<body>
+
+<div class="blob-container">
+
+    <!-- BLUE FAMILY -->
+    <div class="blob blue1"></div>
+    <div class="blob blue2"></div>
+    <div class="blob blue3"></div>
+
+    <!-- LAVENDER FAMILY -->
+    <div class="blob purple1"></div>
+    <div class="blob purple2"></div>
+    <div class="blob purple3"></div>
+
+    <!-- MIX / FILL BLOBS -->
+    <div class="blob mix1"></div>
+    <div class="blob mix2"></div>
+
+</div>
+
+<div class="pascaline-container">
+
+  <div class="title-row">
+    <h1 class="title">The Pascaline</h1>
+    <button id="infoBtn" class="info-btn" aria-label="Open instructions">i</button>
+  </div>
+
+  <div class="calculator">
+  
+    <div class="display" id="display">0000</div>
+
+      <div class="dials">
+
+        <div class="dial" data-index="0">
+          <div class="dial-inner"></div>
+        </div>
+
+        <div class="dial" data-index="1">
+          <div class="dial-inner"></div>
+        </div>
+
+        <div class="dial" data-index="2">
+          <div class="dial-inner"></div>
+        </div>
+
+        <div class="dial" data-index="3">
+          <div class="dial-inner"></div>
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+<div id="infoModal" class="modal hidden">
+
+  <div class="modal-content">
+
+    <h2 class="modal-title">How to Use the Pascaline</h2>
+
+    <div class="instructions-frame">
+
+      <div class="instructions-panel">
+
+        <div class="instructions">
+
+          <p>
+            The Pascaline is an early mechanical calculator designed to perform arithmetic using rotating dials instead of manual computation.
+            Each dial represents a single place value in a base-10 system (ones, tens, hundreds, and thousands).
+          </p>
+
+          <p>
+            To use the Pascaline, rotate each dial to select a digit from 0 to 9.
+            When you release a dial, that value is added into its corresponding place value and automatically carried into the total display.
+          </p>
+
+          <h3>How do I calculate a number?</h3>
+
+          <p>
+            Start from the rightmost dial (ones place) and move leftward.
+            Each dial contributes its digit multiplied by its place value.
+            For example, setting 3-4-2-1 produces the number 3421.
+          </p>
+
+          <h3>What happens when a dial passes 9?</h3>
+
+          <p>
+            In a real Pascaline, gears would physically carry overflow into the next column.
+            In this simulation, values are interpreted per dial position when released.
+          </p>
+
+          <h3>What can I do with it?</h3>
+
+          <p>
+            You can use the Pascaline to build numbers and explore place value.
+            Future versions would support full addition and subtraction through mechanical carrying.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+  <button id="closeModal" class="close-btn" aria-label="Close instructions">
+    ×
+  </button>
+
+  </div>
+
+</div>
+
+<script>
+const dials = document.querySelectorAll(".dial");
+const display = document.getElementById("display");
+
+let totalValue = 0;
+
+const placeValues = [1000, 100, 10, 1];
+
+const angles = [0, 0, 0, 0];
+
+let activeDial = null;
+let center = { x: 0, y: 0 };
+let startAngle = 0;
+let dialStartAngle = 0;
+
+dials.forEach(dial => {
+  const inner = dial.querySelector(".dial-inner");
+
+  for (let i = 0; i < 10; i++) {
+    const span = document.createElement("span");
+    span.textContent = i;
+    span.style.setProperty("--i", i);
+    inner.appendChild(span);
+  }
+});
+
+function getAngle(x, y) {
+  return Math.atan2(y - center.y, x - center.x) * (180 / Math.PI);
+}
+
+/* START DRAG */
+dials.forEach((dial, index) => {
+  dial.addEventListener("mousedown", (e) => {
+    activeDial = index;
+
+    const rect = dial.getBoundingClientRect();
+    center.x = rect.left + rect.width / 2;
+    center.y = rect.top + rect.height / 2;
+
+    startAngle = getAngle(e.clientX, e.clientY);
+    dialStartAngle = angles[index];
+
+    e.preventDefault();
+  });
+});
+
+/* MOVE DRAG */
+window.addEventListener("mousemove", (e) => {
+  if (activeDial === null) return;
+
+  const currentAngle = getAngle(e.clientX, e.clientY);
+  const delta = currentAngle - startAngle;
+  const newAngle = dialStartAngle + delta;
+
+  angles[activeDial] = newAngle;
+
+  const inner = dials[activeDial].querySelector(".dial-inner");
+  inner.style.transform = `rotate(${newAngle}deg)`;
+});
+
+/* END DRAG */
+window.addEventListener("mouseup", () => {
+  if (activeDial === null) return;
+
+  const index = activeDial;
+
+  // normalize angle
+  let normalizedAngle = ((angles[index] % 360) + 360) % 360;
+
+  // invert direction (fix clockwise rotation)
+  let correctedAngle = (360 - normalizedAngle) % 360;
+
+  // get dial value (0–9)
+  let value = Math.round(correctedAngle / 36) % 10;
+
+  // 🟩 CHANGED: apply place value per dial
+  totalValue += value * placeValues[index];
+
+  const inner = dials[index].querySelector(".dial-inner");
+
+  // snap back to 0 visually
+  inner.style.transition = "transform 0.2s ease-out";
+  inner.style.transform = `rotate(0deg)`;
+
+  // reset state after animation
+  setTimeout(() => {
+    inner.style.transition = "none";
+    angles[index] = 0;
+  }, 200);
+
+  updateDisplay();
+
+  activeDial = null;
+});
+
+/* 🟩 display full number */
+function updateDisplay() {
+  display.textContent = totalValue.toString();
+}
+
+const infoBtn = document.getElementById("infoBtn");
+const modal = document.getElementById("infoModal");
+const closeBtn = document.getElementById("closeModal");
+
+infoBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+  }
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles_contact.css">
+    <link rel="icon" type="image/png" href="/images/math_pathways_logo.png">
+
+</head>
+<body>
+
+<div class="blob-container">
+
+    <!-- BLUE FAMILY -->
+    <div class="blob blue1"></div>
+    <div class="blob blue2"></div>
+    <div class="blob blue3"></div>
+
+    <!-- LAVENDER FAMILY -->
+    <div class="blob purple1"></div>
+    <div class="blob purple2"></div>
+    <div class="blob purple3"></div>
+
+    <!-- MIX / FILL BLOBS -->
+    <div class="blob mix1"></div>
+    <div class="blob mix2"></div>
+
+</div>
+
+<div class="contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+        <h1>Send a Message</h1>
+        <p>
+            Have a question, suggestion, or just want to talk math?
+            Send a message and I’ll get back to you as soon as I can.
+        </p>
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="contact-right">
+        <form action= "https://formspree.io/f/xlgazzqa" method="POST">
+
+            <div class="name-row">
+                <input type="text" name="firstName" placeholder="First Name" required>
+                <input type="text" name="lastName" placeholder="Last Name" required>
+            </div>
+
+            <input type="email" name="email" placeholder="Email Address" required>
+
+            <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+
+            <button type="submit">Send</button>
+
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>

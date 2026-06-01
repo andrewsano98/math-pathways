@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="styles_mathematicians.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+    <link rel="icon" type="image/png" href="/images/math_pathways_logo.png">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+</head>
+<body>
+
+<div class="blob-container">
+
+    <!-- BLUE FAMILY -->
+    <div class="blob blue1"></div>
+    <div class="blob blue2"></div>
+    <div class="blob blue3"></div>
+
+    <!-- LAVENDER FAMILY -->
+    <div class="blob purple1"></div>
+    <div class="blob purple2"></div>
+    <div class="blob purple3"></div>
+
+    <!-- MIX / FILL BLOBS -->
+    <div class="blob mix1"></div>
+    <div class="blob mix2"></div>
+
+</div>
+
+</body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar collapsed" id="sidebar">
+
+        <h2>Branches of Math</h2>
+
+        <p class="sidebar-subtitle">
+        Select one of the fields of math below.
+        </p>
+
+        <div class="menu">
+            <button class="soft-blue-hover" data-branch="algebra">➕ Algebra</button>
+            <button class="soft-blue-hover" data-branch="geometry">📐 Geometry</button>
+            <button class="soft-blue-hover" data-branch="astronomy">🌖 Astronomy</button>
+            <button class="soft-blue-hover" data-branch="calculus">🎢 Calculus</button>
+            <button class="soft-blue-hover" data-branch="statistics">📈 Statistics</button>
+            <button class="soft-blue-hover" data-branch="analysis">🔍 Analysis</button>
+            <button class="soft-blue-hover" data-branch="abstract algebra">🚥 Abstract Algebra</button>
+            <button class="soft-blue-hover" data-branch="topology">🥨 Topology</button>
+            <button class="soft-blue-hover" data-branch="number theory">🧮 Number Theory</button>
+            <button class="soft-blue-hover" data-branch="set theory">📋 Set Theory</button>
+            <button class="soft-blue-hover" data-branch="physics">⚛️ Physics</button>
+            <button class="soft-blue-hover" data-branch="engineering">🚀 Engineering</button>
+            <button class="soft-blue-hover" data-branch="machine learning">🤖 Machine Learning</button>
+            <button class="soft-blue-hover" data-branch="cryptography">🪙 Cryptography</button>
+            <button class="soft-blue-hover" data-branch="economics">💵 Economics</button>
+            <button class="soft-blue-hover" data-branch="applied math">👨‍🔬 Applied Math</button>
+            <button class="soft-blue-hover" data-branch="other">❓ Other</button>
+        </div>
+
+    </div>
+
+    <div class="focus-overlay"></div>
+
+    <button class="soft-blue-hover" id="toggleSidebar">☰</button>
+
+    <!-- MAIN -->
+    <div class="main-content">
+
+        <div class="polaroid-container">
+            <button class="soft-blue-hover" id="prevBtn">◀</button>
+            <img id="polaroid" src="">
+            <button class="soft-blue-hover" id="nextBtn">▶</button>
+        </div>
+
+        <div class="description">
+            <h1 id="name"></h1>
+            <h3 id="date"></h3>
+            <p id="title"></p>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+let data = [];
+let filteredData = [];
+let currentIndex = 0;
+
+// ELEMENTS
+const sidebar = document.getElementById("sidebar");
+const toggleBtn = document.getElementById("toggleSidebar");
+const nameEl = document.getElementById("name");
+const titleEl = document.getElementById("title");
+const dateEl = document.getElementById("date");
+const imgEl = document.getElementById("polaroid");
+const buttons = document.querySelectorAll(".menu button");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+// LOAD DATA
+fetch("mathematicians_final.json")
+    .then(res => res.json())
+    .then(json => {
+        data = json;
+        data.sort((a, b) => a.sort_year - b.sort_year);
+        filteredData = [...data];
+        showWelcomeScreen();
+    });
+
+
+// WELCOME SCREEN
+function showWelcomeScreen() {
+    nameEl.textContent = "Welcome!";
+    dateEl.textContent = "";
+    titleEl.textContent = "Select the toggle button on the left to see the contributions of some of the most famous mathematicians!";
+    imgEl.src = "images/welcome_image.png";
+    imgEl.style.objectPosition = "center";
+    prevBtn.disabled = true;
+    nextBtn.disabled = true;
+}
+
+// DISPLAY FUNCTION
+// ================================
+// MATH + TEXT RENDERER
+// ================================
+function renderTextWithMath(str, container) {
+
+    const parts = str.split(/(\[\[math\]\]|\[\[\/math\]\])/);
+
+    let isMath = false;
+
+    parts.forEach(part => {
+
+        if (part === "[[math]]") {
+            isMath = true;
+            return;
+        }
+
+        if (part === "[[/math]]") {
+            isMath = false;
+            return;
+        }
+
+        const span = document.createElement("span");
+
+        if (isMath) {
+            try {
+                katex.render(part, span, {
+                    throwOnError: false
+                });
+            } catch (e) {
+                span.textContent = part;
+            }
+        } else {
+            span.textContent = part;
+        }
+
+        container.appendChild(span);
+    });
+}
+
+// ================================
+// DISPLAY FUNCTION
+// ================================
+function updateDisplay(i) {
+    const p = filteredData[i];
+    if (!p) return;
+
+    currentIndex = i;
+
+    // BASIC INFO
+    nameEl.textContent = p.name;
+    dateEl.textContent = p.date;
+
+    // CLEAR TITLE AREA
+    titleEl.innerHTML = "";
+
+    // BUILD TITLE
+    p.title.forEach(item => {
+
+        // 🔥 CASE 1: contains math → no bullet, centered block
+        if (item.includes("[[math]]")) {
+
+            const div = document.createElement("div");
+
+            // inline centering (no CSS changes needed)
+            div.style.width = "100%";
+            div.style.textAlign = "center";
+            div.style.margin = "12px 0";
+
+            renderTextWithMath(item, div);
+            titleEl.appendChild(div);
+
+        } else {
+
+            // 🔹 CASE 2: normal text → bullet point
+            const li = document.createElement("li");
+            renderTextWithMath(item, li);
+            titleEl.appendChild(li);
+        }
+    });
+
+    // IMAGE
+    imgEl.src = p.image ? "images/" + p.image : "";
+
+    // BUTTON STATES
+    prevBtn.disabled = (currentIndex === 0);
+    nextBtn.disabled = (currentIndex === filteredData.length - 1);
+}
+
+// ARROWS
+prevBtn.addEventListener("click", () => {
+    const newIndex = Math.max(0, currentIndex - 1);
+    updateDisplay(newIndex);
+});
+
+nextBtn.addEventListener("click", () => {
+    const newIndex = Math.min(filteredData.length - 1, currentIndex + 1);
+    updateDisplay(newIndex);
+});
+
+// SIDEBAR TOGGLE
+toggleBtn.addEventListener("click", () => {
+    sidebar.classList.toggle("collapsed");
+});
+
+// FILTER BUTTONS
+buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        const cat = btn.dataset.branch;
+
+        buttons.forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        filteredData = data.filter(p => p.category === cat);
+
+        currentIndex = 0;
+        updateDisplay(0);
+    });
+});
+
+});
+</script>
+
+</body>
+</html>

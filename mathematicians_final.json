@@ -1,0 +1,2806 @@
+[
+    {
+        "name": "Abdus Salam",
+        "image": "abdus_salam.jpeg",
+        "title":
+            [
+                "Formulated the electroweak unification model with SU(2) × U(1) gauge symmetry."
+            ],        
+        "category": "physics",
+        "date": "1926 - 1996",
+        "sort_year": 1926
+    },
+    {
+        "name": "Abraham De Moivre",
+        "image": "abraham_de_moive.jpeg",
+        "title":
+            [
+                "Established De Moivre's Formula:",
+                "[[math]]\\cos\\theta + i\\sin\\theta)^n = \\cos(n\\theta) + i\\sin(n\\theta)",
+                "Derived the normal approximation to the binomial distribution."
+            ],        
+        "category": "statistics",
+        "date": "1667 - 1754",
+        "sort_year": 1667
+    },
+    {
+        "name": "Ada Lovelace",
+        "image": "ada_lovelace.jpeg",
+        "title":
+            [
+                "Published the first algorithm intended for implementation on Charles Babbage's Analytical Engine.",
+                "Introduced the concept of iterative computation in machine algorithms."
+            ],
+        "category": "statistics",
+        "date": "1815 - 1852",
+        "sort_year": 1815
+    },
+    {
+        "name": "Adi Shamir",
+        "image": "adi_shamir.jpeg",
+        "title":
+            [
+                "Co-invented the RSA public-key cryptosystem.",
+                "Co-developed the Shamir Secret Sharing scheme."
+            ],
+        "category": "cryptography",
+        "date": "1952 - Present",
+        "sort_year": 1952
+    },
+    {
+        "name": "Adrien-Marie Legendre",
+        "image": "adrien_legendre.jpeg",
+        "title":
+            [
+                "Formulated the Law of Quadratic Reciprocity.",
+                "Introduced Legendre polynomials.",
+                "Conjectured the prime-counting approximation known as Legendre's formula for π(x)."
+            ],
+        "category": "number theory",
+        "date": "1752 - 1833",
+        "sort_year": 1752
+    },
+    {
+        "name": "Ahmes",
+        "image": "ahmes.jpeg",
+        "title":
+            [
+                "Wrote the Rhind Mathematical Papyrus.",
+                "Recorded early methods for multiplication using doubling."
+            ],
+        "category": "algebra",
+        "date": "1661 BCE - 1621 BCE",
+        "sort_year": -1661
+    },
+    {
+        "name": "Al-Battani",
+        "image": "al_battani.jpeg",
+        "title":
+            [
+                "Introduced trigonometric ratios using sine in place of chords.",
+                "Compiled accurate trigonometric tables for sine and cosine."
+            ],
+        "category": "astronomy",
+        "date": "850 - 929",
+        "sort_year": 850
+    },
+    {
+        "name": "Al-Karaji",
+        "image": "al_karaji.jpeg",
+        "title":
+            [
+                "Developed algebraic methods for powers and roots of polynomials.",
+                "Formulated early versions of mathematical induction for integer powers."
+            ],
+        "category": "algebra",
+        "date": "953 - 1029",
+        "sort_year": 953
+    },
+    {
+        "name": "Al-Kindi",
+        "image": "al_kindi.jpeg",
+        "title":
+            [
+                "Applied frequency analysis to break substitution ciphers.",
+                "Formalized early methods in cryptanalysis."
+            ],
+        "category": "cryptography",
+        "date": "c. 801 - c. 873",
+        "sort_year": 801
+    },
+    {
+        "name": "Al-Uqlidisi",
+        "image": "al_uqlidisi.jpeg",
+        "title":
+            [
+                "Developed decimal fractions using place-value notation.",
+                "Adapted arithmetic algorithms for decimal representation."
+            ],
+        "category": "algebra",
+        "date": "920 - 980",
+        "sort_year": 920
+    },
+    {
+        "name": "Alain Connes",
+        "image": "alain_connes.jpeg",
+        "title":
+            [
+                "Formulated Noncommutative Geometry.",
+                "Introduced cyclic cohomology."
+            ],
+        "category": "abstract algebra",
+        "date": "1947 - Present",
+        "sort_year": 1947
+    },
+    {
+        "name": "Alan Turing",
+        "image": "alan_turing.jpeg",
+        "title":
+            [
+                "Defined the Turing Machine as a model of computation.",
+                "Formulated the Halting Problem."
+            ],
+        "category": "machine learning",
+        "date": "1912 - 1954",
+        "sort_year": 1912
+    },
+    {
+        "name": "Albert Einstein",
+        "image": "albert_einstein.jpeg",
+        "title":
+            [
+                "Formulated the field equations of General Relativity:",
+                "[[math]]G_{\\mu\\nu} + \\Lambda g_{\\mu\\nu} = \\frac{8\\pi G}{c^4} T_{\\mu\\nu}[[/math]]",
+                "Established the mass-energy equivalence E = mc^2.",
+                "Derived the equations of Special Relativity."
+            ],
+        "category": "physics",
+        "date": "1879 - 1955",
+        "sort_year": 1879
+    },
+    {
+        "name": "Alexander Grothendieck",
+        "image": "alexander_grothendieck.jpeg",
+        "title":
+            [
+                "Developed scheme theory.",
+                "Introduced étale cohomology.",
+                "Formulated the Grothendieck-Riemann-Roch theorem."
+            ],
+        "category": "abstract algebra",
+        "date": "1928 - 2014",
+        "sort_year": 1928
+    },
+    {
+        "name": "Alfred Lotka",
+        "image": "alfred_lotka.jpeg",
+        "title":
+            [
+                "Formulated the Lotka-Volterra predator-prey equations."
+            ],
+        "category": "applied math",
+        "date": "1880 - 1949",
+        "sort_year": 1880
+    },
+    {
+        "name": "Alonzo Church",
+        "image": "alonzo_church.jpeg",
+        "title":
+            [
+                "Formulated the Church-Turing Thesis.",
+                "Developed lambda calculus.",
+                "Proved the undecidability of the Entscheidungsproblem."
+            ],
+        "category": "set theory",
+        "date": "1903 - 1995",
+        "sort_year": 1903
+    },
+    {
+        "name": "André Weil",
+        "image": "andre_weil.jpeg",
+        "title":
+            [
+                "Formulated the Weil conjectures.",
+                "Developed the theory of adeles and ideles."
+            ],
+        "category": "number theory",
+        "date": "1942 - Present",
+        "sort_year": 1942
+    },
+    {
+        "name": "Andrey Kolmogorov",
+        "image": "andrey_kolmogorov.jpeg",
+        "title":
+            [
+                "Axiomatized probability theory using measure theory.",
+                "Defined Kolmogorov complexity."
+            ],
+        "category": "statistics",
+        "date": "1903 - 1987",
+        "sort_year": 1903
+    },
+    {
+        "name": "Annie Easley",
+        "image": "annie_easley.jpeg",
+        "title":
+            [
+                "Developed computational algorithms for energy systems at NASA.",
+                "Implemented numerical methods for large-scale computing systems."
+            ],
+        "category": "machine learning",
+        "date": "1933 - 2011",
+        "sort_year": 1933
+    },
+    {
+        "name": "Apollonius of Perga",
+        "image": "apollonius.jpeg",
+        "title":
+            [
+                "Defined conic sections as intersections of a plane with a cone.",
+                "Formulated properties of ellipses, parabolas, and hyperbolas."
+            ],
+        "category": "geometry",
+        "date": "262 BCE - c. 190 BCE",
+        "sort_year": -262
+    },
+    {
+        "name": "Archimedes",
+        "image": "archimedes.jpeg",
+        "title":
+            [
+                "Derived the formula for the area of a circle using limits.",
+                "Formulated Archimedes' principle of buoyancy.",
+                "Developed methods of exhaustion for calculating areas and volumes."
+            ],
+        "category": "geometry",
+        "date": "c. 287 BCE - 212 BCE",
+        "sort_year": -287
+    },
+    {
+        "name": "Archytas",
+        "image": "archytas.jpeg",
+        "title":
+            [
+                "Constructed the solution to doubling the cube using geometric methods."
+            ],
+        "category": "geometry",
+        "date": "428 BCE - 345 BCE",
+        "sort_year": -428
+    },
+    {
+        "name": "Arthur Cayley",
+        "image": "arthur_cayley.jpeg",
+        "title":
+            [
+                "Defined Cayley graphs.",
+                "Formulated the Cayley-Hamilton theorem.",
+                "Developed the concept of matrix algebra."
+            ],
+        "category": "abstract algebra",
+        "date": "1821 - 1895",
+        "sort_year": 1821
+    },
+    {
+        "name": "Artur Avila",
+        "image": "artur_avila.jpeg",
+        "title":
+            [
+                "Proved results on the spectral theory of one-dimensional Schrödinger operators.",
+                "Established the simplicity of Lyapunov exponents for certain dynamical systems."
+            ],
+        "category": "other",
+        "date": "1979 - Present",
+        "sort_year": 1979 
+    },
+    {
+        "name": "Aryabhata",
+        "image": "aryabhata.jpeg",
+        "title":
+            [
+                "Developed the sine table and trigonometric methods.",
+                "Formulated algorithms for solving linear and quadratic equations."
+            ],
+        "category": "astronomy",
+        "date": "476 - 550",
+        "sort_year": 476
+    },
+    {
+        "name": "Atle Selberg",
+        "image": "atle_selberg.jpeg",
+        "title":
+            [
+                "Developed the Selberg Trace Formula.",
+                "Proved the Selberg sieve method."
+            ],
+        "category": "number theory",
+        "date": "1917 - 2007",
+        "sort_year": 1917
+    },
+    {
+        "name": "August Möbius",
+        "image": "august_mobius.jpeg",
+        "title":
+            [
+                "Defined the Möbius transformation.",
+                "Introduced the Möbius strip."
+            ],
+        "category": "topology",
+        "date": "1790 - 1868",
+        "sort_year": 1790
+    },
+    {
+        "name": "Augustin-Louis Cauchy",
+        "image": "augustin_cauchy.jpeg",
+        "title":
+            [
+                "Formulated the Cauchy Integral Theorem.",
+                "Defined Cauchy sequences.",
+                "Established rigorous definitions of limits and continuity."
+            ],
+        "category": "analysis",
+        "date": "1789 - 1857",
+        "sort_year": 1789
+    },
+    {
+        "name": "Augustus DeMorgan",
+        "image": "augustus_demorgan.jpeg",
+        "title":
+            [
+                "Formulated De Morgan's Laws in propositional logic.",
+                "Advanced symbolic logic as a formal mathematical system."
+            ],
+        "category": "set theory",
+        "date": "1806 - 1871",
+        "sort_year": 1806
+    },
+    {
+        "name": "Benjamin Banneker",
+        "image": "benjamin_banneker.jpeg",
+        "title":
+            [
+                "Computed the first ephemeris of a solar eclipse in North America.",
+                "Constructed one of the earliest fully calculated astronomical almanacs in the United States."
+            ],
+        "category": "astronomy",
+        "date": "1731 - 1806",
+        "sort_year": 1731
+    },
+    {
+        "name": "Benoit Mandelbrot",
+        "image": "benoit_mandelbrot.jpeg",
+        "title":
+            [
+                "Defined and studied fractals.",
+                "Introduced the Mandelbrot set."
+            ],
+        "category": "geometry",
+        "date": "1924 - 2010",
+        "sort_year": 1924
+    },
+    {
+        "name": "Bernhard Riemann",
+        "image": "bernhard_riemann.jpeg",
+        "title":
+            [
+                "Formulated the Riemann Hypothesis.",
+                "Developed Riemannian geometry.",
+                "Defined the Riemann integral."
+            ],
+        "category": "geometry",
+        "date": "1826 - 1866",
+        "sort_year": 1826
+    },
+    {
+        "name": "Bertrand Russell",
+        "image": "bertrand_russell.jpeg",
+        "title":
+            [
+                "Developed type theory.",
+                "Co-authored Principia Mathematica.",
+                "Formulated Russell's Paradox."
+            ],
+        "category": "set theory",
+        "date": "1872 - 1970",
+        "sort_year": 1872
+    },
+    {
+        "name": "Bhaskara II",
+        "image": "bhaskara_II.jpeg",
+        "title":
+            [
+                "Formulated Bhaskara's sine approximation formula.",
+                "Solved Pell-type equations systematically.",
+                "Proved results on quadratic equations including multiple-root cases."
+            ],
+        "category": "algebra",
+        "date": "c. 1114 - 1185",
+        "sort_year": 1114
+    },
+    {
+        "name": "Blaise Pascal",
+        "image": "blaise_pascal.jpeg",
+        "title":
+            [
+                "Formulated Pascal's Triangle.",
+                "Developed probability theory with Fermat.",
+                "Proved Pascal's Theorem in projective geometry."
+            ],
+        "category": "statistics",
+        "date": "1623 - 1662",
+        "sort_year": 1623
+    },
+    {
+        "name": "Bonaventura Cavalieri",
+        "image": "bonaventura_cavalieri.jpeg",
+        "title":
+            [
+                "Developed Cavalieri's principle for volume comparison.",
+                "Advanced the method of indivisibles for integration."
+            ],
+        "category": "calculus",
+        "date": "1598 - 1647",
+        "sort_year": 1598
+    },
+    {
+        "name": "Bradley Efron",
+        "image": "bradley_efron.jpeg",
+        "title":
+            [
+                "Developed bootstrap resampling methods.",
+                "Co-introduced the jackknife method for statistical estimation."
+            ],
+        "category": "machine learning",
+        "date": "1938 - Present",
+        "sort_year": 1938
+    },
+    {
+        "name": "Brahmagupta",
+        "image": "brahmagupta.jpeg",
+        "title":
+            [
+                "Formulated rules for solving quadratic equations.",
+                "Defined zero as a number and established arithmetic with it.",
+                "Described negative number operations systematically."
+            ],
+        "category": "algebra",
+        "date": "c. 598 - c. 668",
+        "sort_year": 598
+    },
+    {
+        "name": "C. R. Rao",
+        "image": "c.r._rao.jpeg",
+        "title":
+            [
+                "Developed multivariate analysis methods.",
+                "Formulated the Cramér–Rao bound.",
+                "Established foundations of statistical estimation theory."
+            ],
+        "category": "statistics",
+        "date": "1920 - 2023",
+        "sort_year": 1920
+    },
+    {
+        "name": "Carl Friedrich Gauss",
+        "image": "carl_friedrich_gauss.jpeg",
+        "title":
+            [
+                "Formulated the Gaussian distribution.",
+                "Proved the Fundamental Theorem of Algebra.",
+                "Developed least squares method.",
+                "Formulated Gaussian integer theory."
+            ],
+        "category": "calculus",
+        "date": "1777 - 1855",
+        "sort_year": 1777
+    },
+    {
+        "name": "Carl Gustav Jacob Jacobi",
+        "image": "carl_gustav_jacobi.jpeg",
+        "title":
+            [
+                "Developed the theory of determinants.",
+                "Formulated Jacobi elliptic functions.",
+                "Established canonical forms in differential equations."
+            ],
+        "category": "analysis",
+        "date": "1804 - 1851",
+        "sort_year": 1804
+    },
+    {
+        "name": "Cédric Villani",
+        "image": "cedric_villani.jpeg",
+        "title":
+            [
+                "Proved results in optimal transport theory.",
+                "Advanced nonlinear partial differential equations for fluid dynamics."
+            ],
+        "category": "analysis",
+        "date": "1973 - Present",
+        "sort_year": 1973
+    },
+    {
+        "name": "Charles Babbage",
+        "image": "charles_babbage.jpeg",
+        "title":
+            [
+                "Designed the first mechanical general-purpose computing engine.",
+                "Developed early concepts of programmable computation.",
+                "Formulated the Analytical Engine architecture."
+            ],
+        "category": "machine learning",
+        "date": "1791 - 1871",
+        "sort_year": 1791
+    },
+    {
+        "name": "Charles Hermite",
+        "image": "charles_hermite.jpeg",
+        "title":
+            [
+                "Developed Hermite polynomials.",
+                "Proved results on transcendental number theory, including partial work on e."
+            ],
+        "category": "number theory",
+        "date": "1822 - 1901",
+        "sort_year": 1822
+    },
+    {
+        "name": "Christiaan Huygens",
+        "image": "christiaan_huygens.jpeg",
+        "title":
+            [
+                "Formulated the wave theory of light.",
+                "Derived the formula for the period of a simple pendulum.",
+                "Developed Huygens' principle for wave propagation."
+            ],
+        "category": "physics",
+        "date": "1629 - 1695",
+        "sort_year": 1629
+    },
+    {
+        "name": "Christian Goldbach",
+        "image": "christian_goldbach.jpeg",
+        "title":
+            [
+                "Proposed Goldbach's Conjecture.",
+                "Formulated early results in additive number theory."
+            ],
+        "category": "number theory",
+        "date": "1690 - 1764",
+        "sort_year": 1690
+    },
+    {
+        "name": "Claude Elwood Shannon",
+        "image": "claude_shannon.jpeg",
+        "title":
+            [
+                "Formulated Shannon's information entropy.",
+                "Established Shannon's theorem for channel capacity.",
+                "Developed the mathematical foundation of information theory."
+            ],
+        "category": "other",
+        "date": "1916 - 2001",
+        "sort_year": 1916
+    },
+    {
+        "name": "Daniel Bernoulli",
+        "image": "daniel_bernoulli.jpeg",
+        "title":
+            [
+                "Solved the Bernoulli differential equation.",
+                "Developed Bernoulli's principle relating pressure and fluid velocity.",
+                "Formulated the law of large numbers in early probabilistic form."
+            ],
+        "category": "physics",
+        "date": "1700  - 1782",
+        "sort_year": 1700
+    },
+    {
+        "name": "David Blackwell",
+        "image": "david_blackwell.jpeg",
+        "title":
+            [
+                "Developed probability models for decision theory.",
+                "Formulated Blackwell's theorem on sufficiency in statistics."
+            ],
+        "category": "statistics",
+        "date": "1919 - 2010",
+        "sort_year": 1919
+    },
+    {
+        "name": "David Hilbert",
+        "image": "david_hilbert.jpeg",
+        "title":
+            [
+                "Formulated the Hilbert space framework.",
+                "Proposed Hilbert's problems.",
+                "Developed axiomatization of geometry.",
+                "Established invariant theory foundations."
+            ],
+        "category": "set theory",
+        "date": "1862 - 1943",
+        "sort_year": 1862
+    },
+    {
+        "name": "Diophantus",
+        "image": "diophantus.jpeg",
+        "title":
+            [
+                "Developed early algebraic methods for solving polynomial equations.",
+                "Wrote Arithmetica, introducing symbolic algebraic notation."
+            ],
+        "category": "algebra",
+        "date": "unknown - 284",
+        "sort_year": 284
+    },
+    {
+        "name": "Dorothy Vaughan",
+        "image": "dorothy_vaughan.jpeg",
+        "title":
+            [
+                "Calculated orbital mechanics trajectories for NASA missions.",
+                "Contributed to early numerical methods in aerospace computing."
+            ],
+        "category": "engineering",
+        "date": "1910 - 2008",
+        "sort_year": 1910
+    },
+    {
+        "name": "Edward Lorenz",
+        "image": "edward_lorenz.jpeg",
+        "title":
+            [
+                "Discovered chaos theory via the Lorenz system.",
+                "Formulated the Lorenz attractor.",
+                "Identified deterministic chaos in weather models."
+            ],
+        "category": "other",
+        "date": "1917 - 2008",
+        "sort_year": 1917
+    },
+    {
+        "name": "Edward Witten",
+        "image": "edward_witten.jpeg",
+        "title":
+            [
+                "Formulated string theory dualities.",
+                "Developed topological quantum field theory.",
+                "Contributed to M-theory framework."
+            ],
+        "category": "physics",
+        "date": "1951 - Present",
+        "sort_year": 1951
+    },
+    {
+        "name": "Elbert Frank Cox",
+        "image": "elbert_frank_cox.jpeg",
+        "title":
+            [
+                "First African-American woman to earn a PhD in mathematics.",
+                "Contributed to functional analysis and differential equations."
+            ],
+        "category": "other",
+        "date": "1895 - 1969",
+        "sort_year": 1895
+    },
+    {
+        "name": "Emil Artin",
+        "image": "emil_artin.jpeg",
+        "title":
+            [
+                "Developed class field theory.",
+                "Formulated Artin reciprocity law.",
+                "Introduced Artin L-functions."
+            ],
+        "category": "abstract algebra",
+        "date": "1898 - 1962",
+        "sort_year": 1898
+    },
+    {
+        "name": "Emmy Noether",
+        "image": "emmy_noether.jpeg",
+        "title":
+            [
+                "Formulated Noether's theorem connecting symmetries and conservation laws.",
+                "Developed abstract algebra and ideal theory.",
+                "Reconstructed modern ring theory."
+            ],
+        "category": "abstract algebra",
+        "date": "1882 - 1935",
+        "sort_year": 1882
+    },
+    {
+        "name": "Enrico Fermi",
+        "image": "enrico_fermi.jpeg",
+        "title":
+            [
+                "Developed the Fermi-Dirac statistics.",
+                "Constructed the first nuclear reactor.",
+                "Formulated weak interaction theory of beta decay."
+            ],
+        "category": "physics",
+        "date": "1901 - 1954",
+        "sort_year": 1901
+    },
+    {
+        "name": "Eratosthenes",
+        "image": "eratosthenes.jpeg",
+        "title":
+            [
+                "Developed the Sieve of Eratosthenes for finding prime numbers.",
+                "Calculated the circumference of the Earth using geometric measurements."
+            ],
+        "category": "astronomy",
+        "date": "276 BCE - 194 BCE",
+        "sort_year": -276
+    },
+    {
+        "name": "Ernst Kummer",
+        "image": "ernst_kummer.jpeg",
+        "title":
+            [
+                "Developed Kummer's ideal numbers.",
+                "Proved Fermat's Last Theorem for a large class of exponents."
+            ],
+        "category": "number theory",
+        "date": "1810 - 1893",
+        "sort_year": 1810
+    },
+    {
+        "name": "Euclid",
+        "image": "euclid.jpeg",
+        "title":
+            [
+                "Formulated Euclid's Elements axiomatic geometry.",
+                "Proved the infinitude of primes.",
+                "Developed the Euclidean algorithm for greatest common divisor:",
+                "[[math]]\\gcd(a,b) = \\gcd(b, a \\bmod b)"
+            ],
+        "category": "geometry",
+        "date": "c. 325 BCE - c. 265 BCE",
+        "sort_year": -325
+    },
+    {
+        "name": "Eudoxus",
+        "image": "eudoxus.jpeg",
+        "title":
+            [
+                "Developed the method of exhaustion for area and volume.",
+                "Formulated the theory of proportions for incommensurable magnitudes."
+            ],
+        "category": "geometry",
+        "date": "c. 390 BCE - c. 340 BCE",
+        "sort_year": -390
+    },
+    {
+        "name": "Euphemia Lofton Haynes",
+        "image": "euphemia_lofton_haynes.jpeg",
+        "title":
+            [
+                "First African-American woman to earn a PhD in mathematics.",
+                "Contributed to functional analysis and mathematics education reform."
+            ],
+        "category": "other",
+        "date": "1890 - 1980",
+        "sort_year": 1890
+    },
+    {
+        "name": "Felix Hausdorff",
+        "image": "felix_hausdorff.jpeg",
+        "title":
+            [
+                "Defined Hausdorff dimension.",
+                "Formulated the Hausdorff metric in topology.",
+                "Developed set-theoretic topology foundations."
+            ],
+        "category": "topology",
+        "date": "1868 - 1942",
+        "sort_year": 1868
+    },
+    {
+        "name": "Felix Klein",
+        "image": "felix_klein.jpeg",
+        "title":
+            [
+                "Developed Klein's Erlangen Program classifying geometries via group theory.",
+                "Formulated the Klein bottle.",
+                "Advanced non-Euclidean geometry."
+            ],
+        "category": "topology",
+        "date": "1849 - 1925",
+        "sort_year": 1849
+    },
+    {
+        "name": "Fern Hunt",
+        "image": "fern_hunt.jpeg",
+        "title":
+            [
+                "Developed numerical methods for climate and atmospheric modeling.",
+                "Contributed to computational fluid dynamics simulations."
+            ],
+        "category": "applied math",
+        "date": "1948 - Present",
+        "sort_year": 1948
+    },
+    {
+        "name": "Fischer Black",
+        "image": "fischer_black.jpeg",
+        "title":
+            [
+                "Formulated the Black–Scholes equation for option pricing:",
+                "[[math]]\\frac{\\partial V}{\\partial t} + \\frac{1}{2}\\sigma^2 S^2 \\frac{\\partial^2 V}{\\partial S^2} + rS \\frac{\\partial V}{\\partial S} - rV = 0",
+                "Developed stochastic calculus models for financial derivatives."
+            ],
+        "category": "economics",
+        "date": "1938 - 1995",
+        "sort_year": 1938
+    },
+    {
+        "name": "Florence Nightingale",
+        "image": "florence_nightingale.jpeg",
+        "title":
+            [
+                "Formulated the statistical study of mortality and morbidity rates.",
+                "Developed early quantitative epidemiological methods."
+            ],
+        "category": "statistics",
+        "date": "1820 - 1910",
+        "sort_year": 1820
+    },
+    {
+        "name": "Frank Rosenblatt",
+        "image": "frank_rosenblatt.jpeg",
+        "title":
+            [
+                "Developed the Perceptron algorithm.",
+                "Formulated early neural network learning models."
+            ],
+        "category": "machine learning",
+        "date": "1928 - 1971",
+        "sort_year": 1928
+    },
+    {
+        "name": "François Viète",
+        "image": "francois_viete.jpeg",
+        "title":
+            [
+                "Introduced Vieta's formulas relating roots and coefficients of polynomials.",
+                "Developed symbolic algebra notation using letters for unknowns."
+            ],
+        "category": "algebra",
+        "date": "1540 - 1603",
+        "sort_year": 1540
+    },
+    {
+        "name": "G. H. Hardy",
+        "image": "g.h._hardy.jpeg",
+        "title":
+            [
+                "Formulated the Hardy–Weinberg principle.",
+                "Proved results in number theory including Hardy–Ramanujan asymptotics."
+            ],
+        "category": "number theory",
+        "date": "1877 - 1947",
+        "sort_year": 1877
+    },
+    {
+        "name": "Gaspard Monge",
+        "image": "gaspard_monge.jpeg",
+        "title":
+            [
+                "Developed descriptive geometry methods.",
+                "Formulated Monge's transport problem."
+            ],
+        "category": "geometry",
+        "date": "1746 - 1818",
+        "sort_year": 1746
+    },
+    {
+        "name": "Geoffrey Hinton",
+        "image": "geoffrey_hinton.jpeg",
+        "title":
+            [
+                "Developed backpropagation algorithms for neural networks.",
+                "Formulated deep learning optimization methods."
+            ],
+        "category": "machine learning",
+        "date": "1947 - Present",
+        "sort_year": 1947
+    },
+    {
+        "name": "Georg Cantor",
+        "image": "georg_cantor.jpeg",
+        "title":
+            [
+                "Founded set theory with transfinite numbers.",
+                "Proved that real numbers are uncountable.",
+                "Formulated Cantor's diagonal argument."
+            ],
+        "category": "set theory",
+        "date": "1845 - 1918",
+        "sort_year": 1845
+    },
+    {
+        "name": "George Boole",
+        "image": "george_boole.jpeg",
+        "title":
+            [
+                "Formulated Boolean algebra.",
+                "Developed symbolic logic as algebraic structure.",
+                "Defined logical operations in mathematical form."
+            ],
+        "category": "other",
+        "date": "1815 - 1864",
+        "sort_year": 1815
+    },
+    {
+        "name": "George E. P. Box",
+        "image": "george_box.jpeg",
+        "title":
+            [
+                "Formulated the Box–Jenkins methodology for time series analysis.",
+                "Established the principle that all models are wrong but some are useful."
+            ],
+        "category": "machine learning",
+        "date": "1919 - 2013",
+        "sort_year": 1919
+    },
+    {
+        "name": "Gerolamo Cardano",
+        "image": "gerolamo_cardano.jpeg",
+        "title":
+            [
+                "Solved the general cubic and quartic equations.",
+                "Wrote Ars Magna, introducing systematic solutions of higher-degree polynomials.",
+                "Developed early work in probability theory."
+            ],
+        "category": "algebra",
+        "date": "1501 - 1576",
+        "sort_year": 1501
+    },
+    {
+        "name": "Giovanni Ceva",
+        "image": "giovanni_ceva.jpeg",
+        "title":
+            [
+                "Formulated Ceva's Theorem in triangle geometry:",
+                "[[math]]\\frac{AF}{FB} \\cdot \\frac{BD}{DC} \\cdot \\frac{CE}{EA} = 1",
+                "Established conditions for concurrency of cevians."
+            ],
+        "category": "geometry",
+        "date": "1647 - 1734",
+        "sort_year": 1647
+    },
+    {
+        "name": "Girard Desargues",
+        "image": "girard_desargues.jpeg",
+        "title":
+            [
+                "Developed Desargues' Theorem in projective geometry.",
+                "Formulated foundational principles of projective geometry."
+            ],
+        "category": "geometry",
+        "date": "1591 - 1661",
+        "sort_year": 1591
+    },
+    {
+        "name": "Giuseppe Peano",
+        "image": "giuseppe_peano.jpeg",
+        "title":
+            [
+                "Formulated Peano axioms for natural numbers.",
+                "Developed formal symbolic logic notation.",
+                "Defined the concept of mathematical rigor in arithmetic systems."
+            ],
+        "category": "set theory",
+        "date": "1858 - 1932",
+        "sort_year": 1858
+    },
+    {
+        "name": "Gottfried Wilhelm Leibniz",
+        "image": "gottfried_wilhelm_leibniz.jpeg",
+        "title":
+            [
+                "Developed infinitesimal calculus independently of Newton.",
+                "Formulated the product rule and chain rule notation.",
+                "Created binary number system foundations."
+            ],
+        "category": "calculus",
+        "date": "1646 - 1716",
+        "sort_year": 1646
+    },
+    {
+        "name": "Grace Hopper",
+        "image": "grace_hopper.jpeg",
+        "title":
+            [
+                "Developed the first compiler (A-0 system).",
+                "Coined the term “debugging” in computing.",
+                "Advanced early programming language design."
+            ],
+        "category": "machine learning",
+        "date": "1906 - 1992",
+        "sort_year": 1906
+    },
+    {
+        "name": "Grigori Perelman",
+        "image": "grigori_perelman.jpeg",
+        "title":
+            [
+                "Solved the Poincaré Conjecture.",
+                "Developed topology as a field.",
+                "Formulated Poincaré recurrence theorem.",
+                "Founded algebraic topology."
+            ],
+        "category": "topology",
+        "date": "1966 - Present",
+        "sort_year": 1966
+    },
+    {
+        "name": "Henri Léon Lebesgue",
+        "image": "henri_lebesgue.jpeg",
+        "title":
+            [
+                "Developed Lebesgue measure theory.",
+                "Formulated Lebesgue integral.",
+                "Established modern real analysis foundations."
+            ],
+        "category": "calculus",
+        "date": "1875 - 1941",
+        "sort_year": 1875
+    },
+    {
+        "name": "Henri Poincaré",
+        "image": "henri_poincare.jpeg",
+        "title":
+            [
+                "Founded algebraic topology.",
+                "Formulated the Poincaré duality conjecture.",
+                "Developed qualitative theory of dynamical systems."
+            ],
+        "category": "topology",
+        "date": "1854 - 1912",
+        "sort_year": 1854
+    },
+    {
+        "name": "Hermann Grassmann",
+        "image": "hermann_grassmann.jpeg",
+        "title":
+            [
+                "Developed Grassmann algebra (exterior algebra).",
+                "Formulated vector space structures.",
+                "Introduced multi-dimensional geometric algebra."
+            ],
+        "category": "abstract algebra",
+        "date": "1809 - 1877",
+        "sort_year": 1809
+    },
+    {
+        "name": "Hermann Weyl",
+        "image": "hermann_weyl.jpeg",
+        "title":
+            [
+                "Formulated Weyl's law in spectral geometry.",
+                "Developed gauge theory foundations.",
+                "Advanced representation theory of Lie groups."
+            ],
+        "category": "geometry",
+        "date": "1885 - 1955",
+        "sort_year": 1885
+    },
+    {
+        "name": "Heron of Alexandria",
+        "image": "heron_of_alexandria.jpeg",
+            "title":
+            [
+                "Derived Heron's formula for triangle area:",
+                "[[math]]A = \\sqrt{s(s-a)(s-b)(s-c)}",
+                "Developed early mechanical devices and geometric constructions."
+            ],
+        "category": "engineering",
+        "date": "c. 10 AD - c. 70 AD",
+        "sort_year": 10
+    },
+    {
+        "name": "Hipparchus",
+        "image": "hipparchus.jpeg",
+        "title":
+            [
+                "Developed trigonometric tables for astronomy.",
+                "Calculated precession of the equinoxes."
+            ],
+        "category": "astronomy",
+        "date": "c. 190 - c. 120",
+        "sort_year": 190
+    },
+    {
+        "name": "Hippocrates",
+        "image": "hippocrates.jpeg",
+        "title":
+            [
+                "Developed early geometric proofs including the Hippocratic lunes.",
+                "Formulated one of the earliest systematic attempts at squaring the circle problem."
+            ],
+        "category": "geometry",
+        "date": "c. 460 - c. 370",
+        "sort_year": 460
+    },
+    {
+        "name": "Hypatia",
+        "image": "hypatia.jpeg",
+        "title":
+            [
+                "Edited and commented on Diophantus' Arithmetica.",
+                "Developed early methods in algebraic astronomy and conic analysis."
+            ],
+        "category": "geometry",
+        "date": "c. 360 - 415",
+        "sort_year": 360
+    },
+    {
+        "name": "Ibn al-Banna al-Marrakushi",
+        "image": "ibn_al_banna_al_marrakushi.jpeg",
+        "title":
+            [
+                "Developed algebraic rules for solving quadratic and higher-order equations.",
+                "Systematized early algebraic notation and equation manipulation techniques."
+            ],
+        "category": "algebra",
+        "date": "1256 - 1321",
+        "sort_year": 1256
+    },
+    {
+        "name": "Ibn al-Haytham",
+        "image": "ibn_al_haytham.jpeg",
+        "title":
+            [
+                "Formulated the foundations of experimental optics.",
+                "Explained vision via light rays entering the eye.",
+                "Studied the law of reflection and refraction."
+            ],
+        "category": "physics",
+        "date": "965 - 1040",
+        "sort_year": 965
+    },
+    {
+        "name": "Imhotep",
+        "image": "imhotep.jpeg",
+        "title":
+            [
+                "Developed early medical and architectural mathematical techniques.",
+                "Systematized geometry for engineering and construction in early dynastic Egypt."
+            ],
+        "category": "engineering",
+        "date": "c. 2650 BCE",
+        "sort_year": -2650
+    },
+    {
+        "name": "Ingrid Daubechies",
+        "image": "ingrid_daubechies.jpeg",
+        "title":
+            [
+                "Developed wavelet theory.",
+                "Constructed compactly supported orthonormal wavelets.",
+                "Formulated multiresolution analysis."
+            ],
+        "category": "machine learning",
+        "date": "1954 - Present",
+        "sort_year": 1954
+    },
+    {
+        "name": "Isaac Newton",
+        "image": "isaac_newton.jpeg",
+        "title":
+            [
+                "Formulated the laws of motion.",
+                "Developed calculus (fluxions).",
+                "Proved the binomial theorem for general exponents.",
+                "Formulated the law of universal gravitation."
+            ],
+        "category": "calculus",
+        "date": "1643 - 1727",
+        "sort_year": 1643
+    },
+    {
+        "name": "Ivan Gutman",
+        "image": "ivan_gutman.jpeg",
+        "title":
+            [
+                "Developed graph theory invariants such as the Gutman index.",
+                "Formulated molecular structure descriptors in mathematical chemistry."
+            ],
+        "category": "applied math",
+        "date": "1947 - Present",
+        "sort_year": 1947
+    },
+    {
+        "name": "J. B. S. Haldane",
+        "image": "j.b.s._haldane.jpeg",
+        "title":
+            [
+                "Developed mathematical models of population genetics.",
+                "Formulated the principle of balanced polymorphism in evolution."
+            ],
+        "category": "applied math",
+        "date": "1892 - 1964",
+        "sort_year": 1892
+    },
+    {
+        "name": "Jacob Bernoulli",
+        "image": "jacob_bernoulli.jpeg",
+        "title":
+            [
+                "Proved the first version of the law of large numbers.",
+                "Developed Bernoulli numbers and their properties.",
+                "Formulated exponential growth models."
+            ],
+        "category": "statistics",
+        "date": "1655 - 1705",
+        "sort_year": 1655
+    },
+    {
+        "name": "James Clerk Maxwell",
+        "image": "james_maxwell.jpeg",
+        "title":
+            [
+                "Formulated Maxwell's equations.",
+                "Unified electricity, magnetism, and light into electromagnetism.",
+                "Predicted electromagnetic waves."
+            ],
+        "category": "physics",
+        "date": "1831 - 1879",
+        "sort_year": 1831
+    },
+    {
+        "name": "James Joseph Sylvester",
+        "image": "james_sylvester.jpeg",
+        "title":
+            [
+                "Developed invariant theory.",
+                "Formulated Sylvester's matrix theory.",
+                "Contributed to the theory of partitions."
+            ],
+        "category": "abstract algebra",
+        "date": "1814 - 1897",
+        "sort_year": 1814
+    },
+    {
+        "name": "Jamshid Al-Kashi",
+        "image": "jamshid_al_kashi.jpeg",
+        "title":
+            [
+                "Computed highly accurate sine and cosine tables.",
+                "Developed methods for solving cubic equations with extreme precision.",
+                "Calculated π to unprecedented accuracy."
+            ],
+        "category": "algebra",
+        "date": "1380 - 1429",
+        "sort_year": 1380
+    },
+    {
+        "name": "Janos Bolyai",
+        "image": "janos_bolyai.jpeg",
+        "title":
+            [
+                "Formulated non-Euclidean geometry independently.",
+                "Proved consistency of hyperbolic geometry models."
+            ],
+        "category": "geometry",
+        "date": "1802 - 1860",
+        "sort_year": 1802
+    },
+    {
+        "name": "Jean Bourgain",
+        "image": "jean_bourgain.jpeg",
+        "title":
+            [
+                "Proved Bourgain's restriction theorem.",
+                "Developed harmonic analysis methods for nonlinear PDEs.",
+                "Advanced ergodic theory in higher dimensions."
+            ],
+        "category": "analysis",
+        "date": "1954 - 2018",
+        "sort_year": 1954
+    },
+    {
+        "name": "Jean Le Rond d'Alembert ",
+        "image": "jean_le_rond_dalembert.jpeg",
+        "title":
+            [
+                "Developed the theory of partial differential equations.",
+                "Formulated the wave equation:",
+                "[[math]]\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\nabla^2 u",
+                "Advanced fluid dynamics modeling."
+            ],
+        "category": "applied math",
+        "date": "1717 - 1783",
+        "sort_year": 1717
+    },
+    {
+        "name": "Jean-Pierre Serre",
+        "image": "jean_pierre_serre.jpeg",
+        "title":
+            [
+                "Developed algebraic geometry foundations.",
+                "Formulated Serre duality.",
+                "Advanced sheaf cohomology theory."
+            ],
+        "category": "other",
+        "date": "1926 - Present",
+        "sort_year": 1926
+    },
+    {
+        "name": "Jia Xian",
+        "image": "jia_xian.jpeg",
+        "title":
+            [
+                "Developed Jia Xian's triangle (early binomial coefficient table).",
+                "Improved methods for extracting square and cube roots using positional arithmetic."
+            ],
+        "category": "algebra",
+        "date": "c. 1010 - c. 1070",
+        "sort_year": 1010
+    },
+    {
+        "name": "Johann Bernoulli",
+        "image": "johann_bernoulli.jpeg",
+        "title":
+            [
+                "Solved the brachistochrone problem (via calculus of variations methods).",
+                "Developed Bernoulli differential equation methods.",
+                "Formulated exponential curve solutions to growth and decay problems."
+            ],
+        "category": "calculus",
+        "date": "1667 - 1748",
+        "sort_year": 1667
+    },
+    {
+        "name": "Johann Heinrich Lambert",
+        "image": "johann_lambert.jpeg",
+        "title":
+            [
+                "Proved Lambert's irrationality of π.",
+                "Developed hyperbolic function theory.",
+                "Formulated Lambert W function."
+            ],
+        "category": "applied math",
+        "date": "1728 - 1777",
+        "sort_year": 1728
+    },
+    {
+        "name": "Johannes Kepler",
+        "image": "johannes_kepler.jpeg",
+        "title":
+            [
+                "Formulated the three laws of planetary motion.",
+                "Established the area law for elliptical orbits."
+            ],
+        "category": "astronomy",
+        "date": "1571 - 1630",
+        "sort_year": 1571
+    },
+    {
+        "name": "John Conway",
+        "image": "john_conway.jpeg",
+        "title":
+            [
+                "Formulated Conway's Game of Life.",
+                "Developed surreal numbers.",
+                "Contributed to knot theory via Conway polynomial."
+            ],
+        "category": "machine learning",
+        "date": "1937 - 2020",
+        "sort_year": 1937
+    },
+    {
+        "name": "John Littlewood",
+        "image": "john_littlewood.jpeg",
+        "title":
+            [
+                "Proved results in Ramsey theory (van der Waerden-type results with Littlewood).",
+                "Developed inequalities in harmonic analysis (Littlewood–Paley theory)."
+            ],
+        "category": "analysis",
+        "date": "1885 - 1977",
+        "sort_year": 1885
+    },
+    {
+        "name": "John Milnor",
+        "image": "john_milnor.jpeg",
+        "title":
+            [
+                "Proved the h-cobordism theorem.",
+                "Formulated Milnor's exotic spheres.",
+                "Developed Morse theory applications in topology."
+            ],
+        "category": "topology",
+        "date": "1931 - Present",
+        "sort_year": 1931
+    },
+    {
+        "name": "John Napier",
+        "image": "john_napier.jpeg",
+        "title":
+            [
+                "Developed logarithms.",
+                "Formulated Napier's constant usage in computation.",
+                "Created Napier's bones for arithmetic calculation."
+            ],
+        "category": "algebra",
+        "date": "1550 - 1617",
+        "sort_year": 1550
+    },
+    {
+        "name": "John Nash",
+        "image": "john_nash.jpeg",
+        "title":
+            [
+                "Formulated Nash equilibrium.",
+                "Proved the Nash embedding theorem.",
+                "Developed non-cooperative game theory."
+            ],
+        "category": "other",
+        "date": "1928 - 2015",
+        "sort_year": 1928
+    },
+    {
+        "name": "John Urschel",
+        "image": "john_urschel.jpeg",
+        "title":
+            [
+                "Developed combinatorial constructions in graph theory.",
+                "Contributed to Erdős–Urschel results on spectral graph bounds."
+            ],
+        "category": "applied math",
+        "date": "1991 - Present",
+        "sort_year": 1991
+    },
+    {
+        "name": "John Von Neumann",
+        "image": "john_von_neumann.jpeg",
+        "title":
+            [
+                "Formulated the mathematical foundation of quantum mechanics (Hilbert space formalism).",
+                "Developed game theory axioms.",
+                "Proved the spectral theorem.",
+                "Formulated cellular automata models for computation."
+            ],
+        "category": "machine learning",
+        "date": "1903 - 1957",
+        "sort_year": 1903
+    },
+    {
+        "name": "John Wallis",
+        "image": "john_wallis.jpeg",
+        "title":
+            [
+                "Formulated Wallis product for π.",
+                "Developed early integral calculus notation.",
+                "Advanced infinite series representations of functions."
+            ],
+        "category": "calculus",
+        "date": "1616 - 1703",
+        "sort_year": 1616
+    },
+    {
+        "name": "Joseph Fourier",
+        "image": "joseph_fourier.jpeg",
+        "title":
+            [
+                "Formulated Fourier series.",
+                "Developed Fourier transform:",
+                "[[math]]F(\\omega) = \\int_{-\\infty}^{\\infty} f(t)e^{-i\\omega t}\\,dt",
+                "Solved heat equation using trigonometric series."
+            ],
+        "category": "physics",
+        "date": "1768 - 1830",
+        "sort_year": 1768
+    },
+    {
+        "name": "Joseph-Louis Lagrange",
+        "image": "joseph_louis_lagrange.jpeg",
+        "title":
+            [
+                "Formulated Lagrange multipliers.",
+                "Developed Lagrange mechanics.",
+                "Proved Lagrange's theorem in group theory.",
+                "Solved polynomial equations via resolvent methods."
+            ],
+        "category": "calculus",
+        "date": "1736 - 1813",
+        "sort_year": 1736
+    },
+    {
+        "name": "Judea Pearl",
+        "image": "judea_pearl.jpeg",
+        "title":
+            [
+                "Developed causal inference using do-calculus.",
+                "Formulated Bayesian networks.",
+                "Established structural causal models."
+            ],
+        "category": "machine learning",
+        "date": "1936 - Present",
+        "sort_year": 1936
+    },
+    {
+        "name": "Julia Robinson",
+        "image": "julia_robinson.jpeg",
+        "title":
+            [
+                "Proved the decision problem is undecidable for certain classes of Diophantine equations (Hilbert's Tenth Problem over ℤ).",
+                "Advanced recursion theory in mathematical logic."
+            ],
+        "category": "set theory",
+        "date": "1919 - 1985",
+        "sort_year": 1919
+    },
+    {
+        "name": "Karen Uhlenbeck",
+        "image": "karen_uhlenbeck.jpeg",
+        "title":
+            [
+                "Developed Atiyah–Singer index theorem groundwork in elliptic PDEs.",
+                "Formulated global analysis methods in differential geometry."
+            ],
+        "category": "geometry",
+        "date": "1942 - Present",
+        "sort_year": 1942
+    },
+    {
+        "name": "Karl Weierstrass",
+        "image": "karl_weierstrass.jpeg",
+        "title":
+            [
+                "Formulated ε–δ definition of limits.",
+                "Developed Weierstrass approximation theorem.",
+                "Constructed examples of continuous nowhere-differentiable functions."
+            ],
+        "category": "analysis",
+        "date": "1815 - 1897",
+        "sort_year": 1815
+    },
+    {
+        "name": "Katherine Johnson",
+        "image": "katherine_johnson.jpeg",
+        "title":
+            [
+                "Calculated orbital trajectories for NASA's early space missions.",
+                "Developed computational methods for lunar landing navigation models."
+            ],
+        "category": "engineering",
+        "date": "1918 - 2020",
+        "sort_year": 1918
+    },
+    {
+        "name": "Kenneth Appel",
+        "image": "kenneth_appel.jpeg",
+        "title":
+            [
+                "Proved the Four Color Theorem using computer-assisted methods.",
+                "Completed the first computer-verified proof in mathematics."
+            ],
+        "category": "topology",
+        "date": "1932 - 2013",
+        "sort_year": 1932
+    },
+    {
+        "name": "Kiyoshi Itô",
+        "image": "kiyoshi_ito.jpeg",
+        "title":
+            [
+                "Developed Itô calculus for stochastic differential equations.",
+                "Formulated Itô's lemma.",
+                "Founded stochastic analysis."
+            ],
+        "category": "statistics",
+        "date": "1915 - 2008",
+        "sort_year": 1915
+    },
+    {
+        "name": "Kurt Gödel",
+        "image": "kurt_godel.jpeg",
+        "title":
+            [
+                "Proved Gödel's incompleteness theorems.",
+                "Formulated Gödel numbering.",
+                "Established limits of formal axiomatic systems."
+            ],
+        "category": "set theory",
+        "date": "1906 - 1978",
+        "sort_year": 1906
+    },
+    {
+        "name": "Leonard Adleman",
+        "image": "leonard_adleman.jpeg",
+        "title":
+            [
+                "Co-developed public-key cryptography (Diffie–Hellman–Adleman framework).",
+                "Contributed to computational number theory foundations in cryptography."
+            ],
+        "category": "applied math",
+        "date": "1945 - Present",
+        "sort_year": 1945
+    },
+    {
+        "name": "Leonardo Fibonacci",
+        "image": "leonardo_fibonacci.jpeg",
+        "title":
+            [
+                "Defined the Fibonacci sequence in Liber Abaci.",
+                "Introduced Hindu-Arabic numerals to Europe.",
+                "Formulated rabbit growth model."
+            ],
+        "category": "number theory",
+        "date": "c. 1170 - c. 1250",
+        "sort_year": 1170
+    },
+    {
+        "name": "Leonardo da Vinci",
+        "image": "leonardo_da_vinci.jpeg",
+        "title":
+            [
+                "Developed geometric methods for perspective projection.",
+                "Formulated proportional scaling in mechanical design drawings.",
+                "Analyzed mirror symmetry and optics in geometric form."
+            ],
+        "category": "engineering",
+        "date": "1452 - 1519",
+        "sort_year": 1452
+    },
+    {
+        "name": "Leonhard Euler",
+        "image": "leonhard_euler.jpeg",
+        "title":
+            [
+                "Derived Euler's identity:",
+                "[[math]]e^{i\\pi} + 1 = 0",
+                "Formulated Euler's formula relating complex exponentials and trigonometry.",
+                "Proved results in graph theory (Eulerian paths).",
+                "Developed calculus of variations foundations."
+            ],
+        "category": "analysis",
+        "date": "1707 - 1783",
+        "sort_year": 1707
+    },
+    {
+        "name": "Leonid Kantorovich",
+        "image": "leonid_kantorovich.jpeg",
+        "title":
+            [
+                "Formulated Kantorovich optimal transport problem.",
+                "Developed linear programming theory.",
+                "Established resource allocation optimization methods."
+            ],
+        "category": "economics",
+        "date": "1912 - 1986",
+        "sort_year": 1912
+    },
+    {
+        "name": "Liu Hui",
+        "image": "liu_hui.jpeg",
+        "title":
+            [
+                "Developed early methods for computing π using polygonal approximation.",
+                "Improved algorithms for root extraction and approximation of areas."
+            ],
+        "category": "number theory",
+        "date": "c. 225 - c. 295",
+        "sort_year": 225
+    },
+    {
+        "name": "Lloyd Shapley",
+        "image": "lloyd_shapley.jpeg",
+        "title":
+            [
+                "Formulated the Shapley value in cooperative game theory.",
+                "Developed axiomatic bargaining solutions in game allocation."
+            ],
+        "category": "economics",
+        "date": "1923 - 2016",
+        "sort_year": 1923
+    },
+    {
+        "name": "Lorenzo Mascheroni",
+        "image": "lorenzo_mascheroni.jpeg",
+        "title":
+            [
+                "Proposed Mascheroni constant γ.",
+                "Advanced geometric constructions of π approximations."
+            ],
+        "category": "engineering",
+        "date": "1750 - 1800",
+        "sort_year": 1750
+    },
+    {
+        "name": "Louis Bachelier",
+        "image": "louis_bachelier.jpeg",
+        "title":
+            [
+                "Formulated the mathematics of financial speculation.",
+                "Derived Brownian motion model for stock prices.",
+                "Founded mathematical finance theory."
+            ],
+        "category": "economics",
+        "date": "1870 - 1946",
+        "sort_year": 1870
+    },
+    {
+        "name": "Luca Pacioli",
+        "image": "luca_pacioli.jpeg",
+        "title":
+            [
+                "Co-authored Summa de arithmetica systematizing accounting and algebra.",
+                "Developed double-entry bookkeeping mathematics.",
+                "Formalized proportional reasoning in commerce mathematics."
+            ],
+        "category": "economics",
+        "date": "1445 - 1517",
+        "sort_year": 1445
+    },
+    {
+        "name": "M. C. Escher",
+        "image": "m.c._escher.jpeg",
+        "title":
+            [
+                "Developed impossible object constructions in geometry.",
+                "Created tessellation-based representations of hyperbolic space.",
+                "Explored infinity through recursive geometric transformations."
+            ],
+        "category": "other",
+        "date": "1898 - 1972",
+        "sort_year": 1898
+    },
+    {
+        "name": "Madhava of Sangamagrama",
+        "image": "madhava.jpeg",
+        "title":
+            [
+                "Developed infinite series expansions for π, including the Madhava–Leibniz series.",
+                "Formulated early power series approximations of trigonometric functions."
+            ],
+        "category": "calculus",
+        "date": "c. 1340 - 1425",
+        "sort_year": 1340
+    },
+    {
+        "name": "Mae Carol Jemison",
+        "image": "mae_carol_jemison.jpeg",
+        "title":
+            [
+                "Calculated orbital mechanics trajectories for NASA missions.",
+                "Contributed to computational navigation mathematics for spaceflight systems."
+            ],
+        "category": "engineering",
+        "date": "1956 - Present",
+        "sort_year": 1956
+    },
+    {
+        "name": "Maria Gaetana Agnesi",
+        "image": "maria_gaetana_agnesi.jpeg",
+        "title":
+            [
+                "Formulated the Stirling number approximation methods for differential equations.",
+                "Wrote the first major European work systematically using calculus techniques (Instituzioni Analitiche)."
+            ],
+        "category": "calculus",
+        "date": "1718 - 1799",
+        "sort_year": 1718
+    },
+    {
+        "name": "Marie-Sophie Germain",
+        "image": "marie_sophie_germain.jpeg",
+        "title":
+            [
+                "Proved special cases of Fermat's Last Theorem for specific exponents.",
+                "Advanced elasticity theory in mathematical physics."
+            ],
+        "category": "other",
+        "date": "1776 - 1831",
+        "sort_year": 1776
+    },
+    {
+        "name": "Marilyn vos Savant",
+        "image": "marilyn_vos_savant.jpeg",
+        "title":
+            [
+                "Formulated Savant's solution to extremely high-complexity logic problems.",
+                "Published verified solutions to high-difficulty mathematical puzzles (e.g., extremely large digit problems)."
+            ],
+        "category": "statistics",
+        "date": "1946 - Present",
+        "sort_year": 1946
+    },
+    {
+        "name": "Marin Mersenne",
+        "image": "marin_mersenne.jpeg",
+        "title":
+            [
+                "Introduced Mersenne primes (numbers of the form 2^p − 1).",
+                "Studied convergence properties of infinite series."
+            ],
+        "category": "number theory",
+        "date": "1588 - 1648",
+        "sort_year": 1588
+    },
+    {
+        "name": "Marjorie Lee Brown",
+        "image": "marjorie_lee_brown.jpeg",
+        "title":
+            [
+                "Developed early research in abstract algebra over rings.",
+                "Advanced differential equation methods in functional analysis."
+            ],
+        "category": "other",
+        "date": "1914 - 1979",
+        "sort_year": 1914
+    },
+    {
+        "name": "Martin Gardner",
+        "image": "martin_gardner.jpeg",
+        "title":
+            [
+                "Popularized fractals and chaos theory.",
+                "Formulated mathematical puzzles in graph theory and combinatorics.",
+                "Introduced the concept of mathematical recreational problem-solving."
+            ],
+        "category": "other",
+        "date": "1914 - 2010",
+        "sort_year": 1914
+    },
+    {
+        "name": "Martin Hellman",
+        "image": "martin_hellman.jpeg",
+        "title":
+            [
+                "Co-developed Diffie–Hellman key exchange.",
+                "Formulated public-key cryptography foundations."
+            ],
+        "category": "cryptography",
+        "date": "1945 - Present",
+        "sort_year": 1945
+    },
+    {
+        "name": "Marvin Minsky",
+        "image": "marvin_minsky.jpeg",
+        "title":
+            [
+                "Developed artificial intelligence models based on symbolic reasoning.",
+                "Formulated early neural network architectures (Perceptrons and logic-based AI systems)."
+            ],
+        "category": "machine learning",
+        "date": "1927 - 2016",
+        "sort_year": 1927
+    },
+    {
+        "name": "Mary Cartwright",
+        "image": "mary_cartwright.jpeg",
+        "title":
+            [
+                "Developed chaos theory in differential equations.",
+                "Formulated the Cartwright–Littlewood theorem.",
+                "Advanced nonlinear dynamics of oscillatory systems."
+            ],
+        "category": "other",
+        "date": "1900 - 1998",
+        "sort_year": 1900
+    },
+    {
+        "name": "Mary Jackson",
+        "image": "mary_jackson.jpeg",
+        "title":
+            [
+                "Developed computational systems for astronautical engineering at NASA.",
+                "Advanced trajectory optimization methods in spaceflight systems."
+            ],
+        "category": "engineering",
+        "date": "1921 - 2005",
+        "sort_year": 1921
+    },
+    {
+        "name": "Maryam Mirzakhani",
+        "image": "maryam_mirzakhani.jpeg",
+        "title":
+            [
+                "Solved the Moduli Space of Riemann Surfaces problem via hyperbolic geometry.",
+                "Proved finiteness results for Weil–Petersson volumes.",
+                "Advanced low-dimensional topology and dynamical systems."
+            ],
+        "category": "topology",
+        "date": "1977 - 2017",
+        "sort_year": 1977
+    },
+    {
+        "name": "Maryna Vazovska",
+        "image": "maryna_vazovska.jpeg",
+        "title":
+            [
+                "Solved the Kissing Number Problem in eight dimensions.",
+                "Proved optimal sphere packing in 8-dimensional space."
+            ],
+        "category": "topology",
+        "date": "1984 - Present",
+        "sort_year": 1984
+    },
+    {
+        "name": "Michael Faraday",
+        "image": "michael_faraday.jpeg",
+        "title":
+            [
+                "Formulated Faraday's Law of electromagnetic induction.",
+                "Discovered the laws of electrolysis.",
+                "Established field theory foundations in electromagnetism."
+            ],
+        "category": "physics",
+        "date": "1791 - 1867",
+        "sort_year": 1791
+    },
+    {
+        "name": "Mikhael Gromov",
+        "image": "mikhael_gromov.jpeg",
+        "title":
+            [
+                "Developed Gromov hyperbolic geometry.",
+                "Formulated Gromov–Hausdorff convergence.",
+                "Advanced symplectic geometry and geometric group theory."
+            ],
+        "category": "geometry",
+        "date": "1943 - Present",
+        "sort_year": 1943
+    },
+    {
+        "name": "Muhammad ibn Musa Al-Khwarizmi",
+        "image": "muhammad_ibn_al_khwarizmi.jpeg",
+        "title":
+            [
+                "Developed algebraic methods for solving equations (Al-jabr).",
+                "Formulated systematic procedures for linear and quadratic equations.",
+                "Introduced algorithmic arithmetic methods in algebra."
+            ],
+        "category": "algebra",
+        "date": "c. 780 - c. 850",
+        "sort_year": 780
+    },
+    {
+        "name": "Myron Scholes",
+        "image": "myron_scholes.jpeg",
+        "title":
+            [
+                "Co-formulated the Black–Scholes equation for option pricing:",
+                "[[math]]\\frac{\\partial V}{\\partial t} + \\frac{1}{2}\\sigma^2 S^2 \\frac{\\partial^2 V}{\\partial S^2} + rS \\frac{\\partial V}{\\partial S} - rV = 0",
+                "Developed stochastic calculus models for financial derivatives."
+            ],
+        "category": "economics",
+        "date": "1941 - Present",
+        "sort_year": 1941
+    },
+    {
+        "name": "Nasir al-Din al-Tusi",
+        "image": "nasir_al_din_al_tusi.jpeg",
+        "title":
+            [
+                "Developed the Tusi couple geometric construction.",
+                "Formulated early trigonometric identities and planetary motion models."
+            ],
+        "category": "astronomy",
+        "date": "1201 - 1274",
+        "sort_year": 1201
+    },
+    {
+        "name": "Nenad Trinajstic",
+        "image": "nenad_trinajstic.jpeg",
+        "title":
+            [
+                "Developed mathematical graph theory methods in chemical structures.",
+                "Formulated topological indices for molecular graphs."
+            ],
+        "category": "applied math",
+        "date": "1936 - 2021",
+        "sort_year": 1936
+    },
+    {
+        "name": "Ngô Bảo Châu",
+        "image": "ngo_bau_chau.jpeg",
+        "title":
+            [
+                "Solved the fundamental lemma in the Langlands program (fundamental lemma theorem).",
+                "Advanced automorphic forms and representation theory."
+            ],
+        "category": "number theory",
+        "date": "1972 - Present",
+        "sort_year": 1972
+    },
+    {
+        "name": "Niccolò Tartaglia",
+        "image": "niccolo_tartaglia.jpeg",
+        "title":
+            [
+                "Solved cubic equations using radical methods (Tartaglia's solution to the cubic).",
+                "Advanced algebraic methods for solving higher-degree polynomials."
+            ],
+        "category": "algebra",
+        "date": "1500 - 1557",
+        "sort_year": 1500
+    },
+    {
+        "name": "Nicolaus Copernicus",
+        "image": "nicolaus_copernicus.jpeg",
+        "title":
+            [
+                "Formulated heliocentric model of planetary motion.",
+                "Established mathematical structure of orbital periods and epicycles in heliocentrism."
+            ],
+        "category": "astronomy",
+        "date": "1473 - 1543",
+        "sort_year": 1473
+    },
+    {
+        "name": "Nicole Oresme",
+        "image": "nicole_oresme.jpeg",
+        "title":
+            [
+                "Developed early work in analytic geometry and graphing functions.",
+                "Formulated mean speed theorem (precursor to calculus)."
+            ],
+        "category": "calculus",
+        "date": "1325 - 1382",
+        "sort_year": 1325
+    },
+    {
+        "name": "Nicomachus",
+        "image": "nicomachus.jpeg",
+        "title":
+            [
+                "Developed proportional arithmetic systems in number theory.",
+                "Wrote early treatises on arithmetic and musical ratios."
+            ],
+        "category": "number theory",
+        "date": "60 - 120",
+        "sort_year": 60
+    },
+    {
+        "name": "Niels Abel",
+        "image": "niels_abel.jpeg",
+        "title":
+            [
+                "Proved the unsolvability of general quintic equations by radicals.",
+                "Developed early group-theoretic structures in algebra."
+            ],
+        "category": "algebra",
+        "date": "1802 - 1829",
+        "sort_year": 1802
+    },
+    {
+        "name": "Nikolaĭ Lobachevskiĭ",
+        "image": "nikolai_lobachevsky.jpeg",
+        "title":
+            [
+                "Developed non-Euclidean hyperbolic geometry.",
+                "Formulated Lobachevskian geometry axioms.",
+                "Proved consistency of hyperbolic parallel postulates."
+            ],
+        "category": "geometry",
+        "date": "1792 - 1856",
+        "sort_year": 1792
+    },
+    {
+        "name": "Norbert Wiener",
+        "image": "norbert_wiener.jpeg",
+        "title":
+            [
+                "Founded cybernetics.",
+                "Formulated Wiener processes in stochastic analysis.",
+                "Developed Fourier–Wiener transform methods."
+            ],
+        "category": "machine learning",
+        "date": "1894 - 1964",
+        "sort_year": 1894
+    },
+    {
+        "name": "Omar Khayyam",
+        "image": "omar_khayyam.jpeg",
+        "title":
+            [
+                "Solved cubic equations using geometric methods.",
+                "Developed algebraic geometry solutions for conic intersections.",
+                "Advanced early optimization of polynomial equations."
+            ],
+        "category": "algebra",
+        "date": "1048 - 1131",
+        "sort_year": 1048
+    },
+    {
+        "name": "Oskar Morgenstern",
+        "image": "oskar_morgenstern.jpeg",
+        "title":
+            [
+                "Formulated game theory axioms (expected utility framework).",
+                "Co-developed minimax theorem in zero-sum games."
+            ],
+        "category": "economics",
+        "date": "1902 - 1977",
+        "sort_year": 1902
+    },
+    {
+        "name": "Pafnuty Chebyshev",
+        "image": "pafnuty_chebyshev.jpeg",
+        "title":
+            [
+                "Proved Chebyshev's theorem:",
+                "[[math]]P(|X - \\mu| \\geq k\\sigma) \\leq \\frac{1}{k^2}",
+                "Developed Chebyshev polynomials.",
+                "Established bounds on prime number distribution."
+            ],
+        "category": "statistics",
+        "date": "1821 - 1894",
+        "sort_year": 1821
+    },
+    {
+        "name": "Paul Cohen",
+        "image": "paul_cohen.jpeg",
+        "title":
+            [
+                "Proved the independence of the Continuum Hypothesis from ZFC axioms.",
+                "Developed forcing technique in set theory."
+            ],
+        "category": "set theory",
+        "date": "1934 - 2007",
+        "sort_year": 1934
+    },
+    {
+        "name": "Paul Dirac",
+        "image": "paul_dirac.jpeg",
+        "title":
+            [
+                "Formulated the Dirac equation for relativistic electrons.",
+                "Predicted the existence of antimatter.",
+                "Developed bra–ket notation in quantum mechanics."
+            ],
+        "category": "physics",
+        "date": "1902 - 1984",
+        "sort_year": 1902
+    },
+    {
+        "name": "Paul Erdős",
+        "image": "paul_erdos.jpeg",
+        "title":
+            [
+                "Developed probabilistic number theory.",
+                "Proved Erdős–Kac theorem.",
+                "Formulated extremal combinatorics results."
+            ],
+        "category": "number theory",
+        "date": "1913 - 1996",
+        "sort_year": 1913
+    },
+    {
+        "name": "Pedro Nunes",
+        "image": "pedro_nunes.jpeg",
+        "title":
+            [
+                "Developed navigation mathematics for determining latitude at sea.",
+                "Formulated early methods in spherical trigonometry for navigation."
+            ],
+        "category": "applied math",
+        "date": "1502 - 1578",
+        "sort_year": 1502
+    },
+    {
+        "name": "Pierre Deligne",
+        "image": "pierre_deligne.jpeg",
+        "title":
+            [
+                "Proved Weil conjectures.",
+                "Developed étale cohomology techniques.",
+                "Formulated modern algebraic geometry foundations."
+            ],
+        "category": "number theory",
+        "date": "1944 - Present",
+        "sort_year": 1944
+    },
+    {
+        "name": "Pierre de Fermat",
+        "image": "pierre_de_fermat.jpeg",
+        "title":
+            [
+                "Proved Fermat's Last Theorem for specific exponents.",
+                "Formulated Fermat's principle of least time.",
+                "Developed early number theory results in Diophantine equations."
+            ],
+        "category": "number theory",
+        "date": "1601 - 1665",
+        "sort_year": 1601
+    },
+    {
+        "name": "Pierre-Simon Laplace",
+        "image": "pierre_simon_laplace.jpeg",
+        "title":
+            [
+                "Formulated Laplace transform.",
+                "Developed Laplace's equation in potential theory.",
+                "Advanced celestial mechanics stability analysis."
+            ],
+        "category": "calculus",
+        "date": "1749 - 1827",
+        "sort_year": 1749
+    },
+    {
+        "name": "Pingala",
+        "image": "pingala.jpeg",
+        "title":
+            [
+                "Developed binary numeral system representations in Pingala's Chandaḥśāstra.",
+                "Formulated combinatorial patterns of prosody (meru-prastāra, early Pascal triangle form)."
+            ],
+        "category": "algebra",
+        "date": "c. 300 BCE - c. 200 BCE",
+        "sort_year": -300
+    },
+    {
+        "name": "Ptolemy",
+        "image": "ptolemy.jpeg",
+        "title":
+            [
+                "Developed Ptolemaic system of planetary motion.",
+                "Formulated Ptolemy's theorem in geometry.",
+                "Compiled trigonometric tables in Almagest."
+            ],
+        "category": "astronomy",
+        "date": "c. 100 - c. 170",
+        "sort_year": 100
+    },
+    {
+        "name": "Pythagoras",
+        "image": "pythagoras.jpeg",
+        "title":
+            [
+                "Proved the Pythagorean theorem:",
+                "[[math]] a^2 + b^2 = c^2",
+                "Developed properties of harmonic ratios in geometry.",
+                "Established early number theory of triangular relationships."
+            ],
+        "category": "geometry",
+        "date": "c. 570 - c. 495 BCE",
+        "sort_year": -570
+    },
+    {
+        "name": "Pāṇini",
+        "image": "panini.jpeg",
+        "title":
+            [
+                "Developed Sanskrit grammar formalism.",
+                "Formulated context-sensitive grammatical rules.",
+                "Created early generative grammar systems."
+            ],
+        "category": "algebra",
+        "date": "c. 500 BCE - c. 400 BCE",
+        "sort_year": -500
+    },
+    {
+        "name": "Qin Jiushao",
+        "image": "qin_jiushao.jpeg",
+        "title":
+            [
+                "Solved systems of indeterminate equations (Chinese remainder-type methods).",
+                "Developed Tian yuan shu (polynomial algebra methods)."
+            ],
+        "category": "algebra",
+        "date": "1208 - 1261",
+        "sort_year": 1208
+    },
+    {
+        "name": "Regiomontanus",
+        "image": "regiomontanus.jpeg",
+        "title":
+            [
+                "Developed trigonometric tables for astronomy.",
+                "Improved sine computation algorithms.",
+                "Advanced spherical astronomy calculations."
+            ],
+        "category": "astronomy",
+        "date": "1436 - 1476",
+        "sort_year": 1436
+    },
+    {
+        "name": "Reinhard Selten",
+        "image": "reinhard_selten.jpeg",
+        "title":
+            [
+                "Proved equilibrium existence theorem in game theory.",
+                "Developed refinements of Nash equilibrium (Selten's trembling hand perfection)."
+            ],
+        "category": "other",
+        "date": "1930 - 2016",
+        "sort_year": 1930
+    },
+    {
+        "name": "René Descartes",
+        "image": "rene_descartes.jpeg",
+        "title":
+            [
+                "Developed analytic geometry.",
+                "Formulated Cartesian coordinate system.",
+                "Connected algebra with geometry via equations of curves."
+            ],
+        "category": "geometry",
+        "date": "1596 - 1650",
+        "sort_year": 1596
+    },
+    {
+        "name": "Richard Borcherds",
+        "image": "richard_borcherds.jpeg",
+        "title":
+            [
+                "Constructed the Monster group via vertex operator algebras.",
+                "Proved Borcherds product formula.",
+                "Advanced generalized Kac–Moody algebra theory."
+            ],
+        "category": "abstract algebra",
+        "date": "1959 - Present",
+        "sort_year": 1959
+    },
+    {
+        "name": "Richard Dedekind",
+        "image": "richard_dedekind.jpeg",
+        "title":
+            [
+                "Developed Dedekind cuts for real numbers.",
+                "Formulated ideals in ring theory.",
+                "Established rigorous construction of irrational numbers."
+            ],
+        "category": "analysis",
+        "date": "1831 - 1916",
+        "sort_year": 1831
+    },
+    {
+        "name": "Robert Langlands",
+        "image": "robert_langlands.jpeg",
+        "title":
+            [
+                "Formulated Langlands program connecting number theory and representation theory.",
+                "Proposed Langlands duality conjectures.",
+                "Advanced automorphic forms correspondence theory."
+            ],
+        "category": "number theory",
+        "date": "1936 - Present",
+        "sort_year": 1936
+    },
+    {
+        "name": "Robert Cox Merton",
+        "image": "robert_merton.jpeg",
+        "title":
+            [
+                "Formulated the Merton model of credit risk.",
+                "Developed continuous-time option pricing models in financial mathematics."
+            ],
+        "category": "economics",
+        "date": "1910 - 2003",
+        "sort_year": 1910
+    },
+    {
+        "name": "Ron Rivest",
+        "image": "ron_rivest.jpeg",
+        "title":
+            [
+                "Co-developed the RSA cryptosystem.",
+                "Formulated the R–S–A public-key encryption scheme."
+            ],
+        "category": "cryptography",
+        "date": "1947 - Present",
+        "sort_year": 1947
+    },
+    {
+        "name": "Ronald Fisher",
+        "image": "ronald_fisher.jpeg",
+        "title":
+            [
+                "Developed maximum likelihood estimation.",
+                "Formulated Fisher's exact test.",
+                "Established analysis of variance (ANOVA)."
+            ],
+        "category": "applied math",
+        "date": "1890 - 1962",
+        "sort_year": 1890
+    },
+    {
+        "name": "Seki Takakazu",
+        "image": "seki_takakazu.jpeg",
+        "title":
+            [
+                "Developed Seki's determinant methods.",
+                "Formulated early elimination methods for systems of equations in Japanese mathematics."
+            ],
+        "category": "algebra",
+        "date": "1642 - 1708",
+        "sort_year": 1642
+    },
+    {
+        "name": "Shafi Goldwasser",
+        "image": "shafi_goldwasser.jpeg",
+        "title":
+            [
+                "Co-developed the Goldwasser–Micali cryptosystem.",
+                "Formulated zero-knowledge proof systems."
+            ],
+        "category": "cryptography",
+        "date": "1959 - Present",
+        "sort_year": 1959
+    },
+    {
+        "name": "Shen Kuo",
+        "image": "shen_kuo.jpeg",
+        "title":
+            [
+                "Developed early hydraulics and flood control mathematical modeling.",
+                "Formulated astronomical and calendar computation methods."
+            ],
+        "category": "astronomy",
+        "date": "1031 - 1095",
+        "sort_year": 1031
+    },
+    {
+        "name": "Shiing Shen Chern",
+        "image": "shiing_shen_chern.jpeg",
+        "title":
+            [
+                "Formulated Chern classes in differential geometry.",
+                "Developed Chern–Weil theory.",
+                "Advanced global differential geometry of fiber bundles."
+            ],
+        "category": "geometry",
+        "date": "1911 - 2004",
+        "sort_year": 1911
+    },
+    {
+        "name": "Shing Tung Yau",
+        "image": "shing_tung_yau.jpeg",
+        "title":
+            [
+                "Solved the Calabi conjecture (Yau's theorem).",
+                "Developed Calabi–Yau manifolds.",
+                "Advanced complex differential geometry and Kähler geometry."
+            ],
+        "category": "geometry",
+        "date": "1949 - Present",
+        "sort_year": 1949
+    },
+    {
+        "name": "Simon Stevin",
+        "image": "simon_stevin.jpeg",
+        "title":
+            [
+                "Developed decimal fraction notation.",
+                "Formulated systematic algebraic notation for arithmetic operations.",
+                "Advanced early statics and mechanics models."
+            ],
+        "category": "algebra",
+        "date": "1548 - 1620",
+        "sort_year": 1548
+    },
+    {
+        "name": "Sofia Kovalevskaya",
+        "image": "sofia_kovalevskaya.jpeg",
+        "title":
+            [
+                "Solved the Kovalewskaya top in rigid body motion.",
+                "Proved existence theorem for analytic solutions of differential equations."
+            ],
+        "category": "analysis",
+        "date": "1850 - 1891",
+        "sort_year": 1850
+    },
+    {
+        "name": "Sophus Lie",
+        "image": "sophus_lie.jpeg",
+        "title":
+            [
+                "Developed Lie groups.",
+                "Formulated Lie algebras.",
+                "Advanced continuous symmetry theory in differential equations."
+            ],
+        "category": "abstract algebra",
+        "date": "1842 - 1899",
+        "sort_year": 1842
+    },
+    {
+        "name": "Srinivasa Ramanujan",
+        "image": "srinivasa_ramanujan.jpeg",
+        "title":
+            [
+                "Developed infinite series for π.",
+                "Formulated mock theta functions.",
+                "Derived Ramanujan identities in number theory."
+            ],
+        "category": "number theory",
+        "date": "1887 - 1920",
+        "sort_year": 1887
+    },
+    {
+        "name": "Stanislaw Ulam",
+        "image": "stanislaw_ulam.jpeg",
+        "title":
+            [
+                "Developed Monte Carlo methods.",
+                "Formulated Ulam's problem in set theory.",
+                "Advanced cellular automata theory."
+            ],
+        "category": "statistics",
+        "date": "1909 - 1984",
+        "sort_year": 1909
+    },
+    {
+        "name": "Stefan Banach",
+        "image": "stefan_banach.jpeg",
+        "title":
+            [
+                "Developed functional analysis.",
+                "Formulated Banach spaces.",
+                "Established Hahn–Banach theorem."
+            ],
+        "category": "analysis",
+        "date": "1892 - 1945",
+        "sort_year": 1892
+    },
+    {
+        "name": "Stephen Hawking",
+        "image": "stephen_hawking.jpeg",
+        "title":
+            [
+                "Formulated Hawking radiation.",
+                "Developed singularity theorems in general relativity.",
+                "Proved black hole area theorem."
+            ],
+        "category": "physics",
+        "date": "1942 - 2018",
+        "sort_year": 1942
+    },
+    {
+        "name": "Stephen Smale",
+        "image": "stephen_smale.jpeg",
+        "title":
+            [
+                "Proved the Smale horseshoe map.",
+                "Solved parts of the Poincaré conjecture in higher dimensions.",
+                "Developed dynamical systems theory."
+            ],
+        "category": "topology",
+        "date": "1930 - Present",
+        "sort_year": 1930
+    },
+    {
+        "name": "Talithia Williams",
+        "image": "talithia_williams.jpeg",
+        "title":
+            [
+                "Applied statistical modeling to healthcare outcomes.",
+                "Developed data science methods in public health analytics."
+            ],
+        "category": "machine learning",
+        "date": "1974 - Present",
+        "sort_year": 1974
+    },
+    {
+        "name": "Terence Tao",
+        "image": "terence_tao.jpeg",
+        "title":
+            [
+                "Solved Erdős combinatorial problems in number theory.",
+                "Developed additive combinatorics (e.g., Tao–Green theorem on primes).",
+                "Advanced harmonic analysis and PDE theory."
+            ],
+        "category": "number theory",
+        "date": "1975 - Present",
+        "sort_year": 1975
+    },
+    {
+        "name": "Thābit ibn Qurra",
+        "image": "thabit_ibn_qurra.jpeg",
+        "title":
+            [
+                "Developed formulas for amicable numbers.",
+                "Advanced early work in number theory and geometry of proportions."
+            ],
+        "category": "geometry",
+        "date": "836 - 901",
+        "sort_year": 836
+    },
+    {
+        "name": "Thales of Miletus",
+        "image": "thales_of_miletus.jpeg",
+        "title":
+            [
+                "Proved that the angle in a semicircle is a right angle.",
+                "Developed early deductive geometric reasoning methods."
+            ],
+        "category": "geometry",
+        "date": "c. 626 - c. 548",
+        "sort_year": 626
+    },
+    {
+        "name": "Thomas Bayes",
+        "image": "thomas_bayes.jpeg",
+        "title":
+            [
+                "Formulated Bayes' theorem:",
+                "[[math]] P(A|B) = \\frac{P(B|A)P(A)}{P(B)}",
+                "Developed inverse probability theory foundations."
+            ],
+        "category": "statistics",
+        "date": "1702 - 1761",
+        "sort_year": 1702
+    },
+    {
+        "name": "Vito Volterra",
+        "image": "vito_volterra.jpeg",
+        "title":
+            [
+                "Formulated the Volterra integral equations.",
+                "Developed population dynamics models.",
+                "Advanced functional analysis of integral operators."
+            ],
+        "category": "applied math",
+        "date": "1860 - 1940",
+        "sort_year": 1860
+    },
+    {
+        "name": "Vladimir Arnold",
+        "image": "vladimir_arnold.jpeg",
+        "title":
+            [
+                "Developed Arnold's theory of dynamical systems.",
+                "Formulated KAM theory (Kolmogorov–Arnold–Moser theorem).",
+                "Advanced singularity theory and catastrophe theory."
+            ],
+        "category": "other",
+        "date": "1937 - 2010",
+        "sort_year": 1937
+    },
+    {
+        "name": "Vladimir Vapnik",
+        "image": "vladimir_vapnik.jpeg",
+        "title":
+            [
+                "Developed Vapnik–Chervonenkis theory.",
+                "Formulated support vector machines.",
+                "Established statistical learning theory."
+            ],
+        "category": "machine learning",
+        "date": "1936 - Present",
+        "sort_year": 1936
+    },
+    {
+        "name": "Wang Zhenyi",
+        "image": "wang_zhenyi.jpeg",
+        "title":
+            [
+                "Developed early algebraic geometry methods in calendrical computation.",
+                "Formulated mathematical methods for astronomy and surveying."
+            ],
+        "category": "astronomy",
+        "date": "1768 - 1797",
+        "sort_year": 1768
+    },
+    {
+        "name": "William Rowan Hamilton",
+        "image": "william_rowan_hamilton.jpeg",
+        "title":
+            [
+                "Formulated quaternions.",
+                "Developed Hamiltonian mechanics.",
+                "Established Hamiltonian operator formalism in physics."
+            ],
+        "category": "abstract algebra",
+        "date": "1805 - 1865",
+        "sort_year": 1805
+    },
+    {
+        "name": "William Thurston",
+        "image": "william_thurston.jpeg",
+        "title":
+            [
+                "Proved geometrization conjecture for Haken manifolds.",
+                "Formulated Thurston's geometrization program.",
+                "Developed hyperbolic 3-manifold theory."
+            ],
+        "category": "topology",
+        "date": "1946 - 2012",
+        "sort_year": 1946
+    },
+    {
+        "name": "Witfield Diffie",
+        "image": "witfield_diffie.jpeg",
+        "title":
+            [
+                "Co-developed Diffie–Hellman key exchange.",
+                "Formulated public-key cryptography principles."
+            ],
+        "category": "cryptography",
+        "date": "1944 - Present",
+        "sort_year": 1944
+    },
+    {
+        "name": "Yang Hui",
+        "image": "yang_hui.jpeg",
+        "title":
+            [
+                "Developed Pascal triangle variants in Chinese mathematics.",
+                "Formulated Yang Hui triangle identities."
+            ],
+        "category": "algebra",
+        "date": "c. 1238 - c. 1298",
+        "sort_year": 1238
+    },
+    {
+        "name": "Yann LeCunn",
+        "image": "yann_lecunn.jpeg",
+        "title":
+            [
+                "Developed convolutional neural networks (LeNet).",
+                "Advanced deep learning architectures for computer vision.",
+                "Formulated backpropagation improvements for neural nets."
+            ],
+        "category": "machine learning",
+        "date": "1960 - Present",
+        "sort_year": 1960
+    },
+    {
+        "name": "Yitang Zhang",
+        "image": "yitang_zhang.jpeg",
+        "title":
+            [
+                "Proved bounded gaps between primes.",
+                "Established first finite bound on prime gaps (Zhang's theorem)."
+            ],
+        "category": "number theory",
+        "date": "1955 - Present",
+        "sort_year": 1955
+    },
+    {
+        "name": "Yoshua Bengio",
+        "image": "yoshua_bengio.jpeg",
+        "title":
+            [
+                "Developed deep learning optimization methods.",
+                "Advanced neural network training algorithms for representation learning."
+            ],
+        "category": "machine learning",
+        "date": "1964 - Present",
+        "sort_year": 1964
+    },
+    {
+        "name": "Yuri Matiyasevich",
+        "image": "yuri_matiyasevich.jpeg",
+        "title":
+            [
+                "Proved the undecidability of Hilbert's Tenth Problem.",
+                "Formulated results in computability theory for Diophantine equations."
+            ],
+        "category": "set theory",
+        "date": "1947 - Present",
+        "sort_year": 1947
+    },
+    {
+        "name": "Zu Chongzhi",
+        "image": "zu_chongzhi.jpeg",
+        "title":
+            [
+                "Computed π to extreme precision using polygon approximation.",
+                "Developed early numerical approximation methods for circles."
+            ],
+        "category": "algebra",
+        "date": "429 - 500",
+        "sort_year": 429
+    },
+    {
+        "name": "Évariste Galois",
+        "image": "evariste_galois.jpeg",
+        "title":
+            [
+                "Developed Galois theory.",
+                "Formulated group theory of polynomial solvability.",
+                "Proved conditions for solvability of equations by radicals."
+            ],
+        "category": "abstract algebra",
+        "date": "1811 - 1832",
+        "sort_year": 1811
+    }
+]

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles_about.css">
+    <title>About</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="icon" type="image/png" href="/images/math_pathways_logo.png">
+
+  </head>
+
+<body>
+
+<div class="blob-container">
+  <div class="blob blue1"></div>
+  <div class="blob blue2"></div>
+  <div class="blob blue3"></div>
+
+  <div class="blob purple1"></div>
+  <div class="blob purple2"></div>
+  <div class="blob purple3"></div>
+
+  <div class="blob mix1"></div>
+  <div class="blob mix2"></div>
+</div>
+
+<div class="main-content">
+    <div class="timeline-wrapper">
+        <button id="prevBtn">◀</button>
+            <div class="container">
+                <div class="content-shell">
+                    <div class="content" id="content"></div>
+                </div>
+            </div>
+        <button id="nextBtn">▶</button>
+    </div>
+</div>
+
+<script>
+let pages = [];
+let currentPage = 0;
+
+fetch("about.md")
+  .then(res => res.text())
+  .then(text => {
+    pages = text.split("---PAGE---");
+    renderPage(0);
+  });
+
+function renderPage(index) {
+  const content = document.getElementById("content");
+
+  content.innerHTML = marked.parse(pages[index]);
+
+  updateButtons();
+}
+
+document.getElementById("prevBtn").addEventListener("click", () => {
+  if (currentPage > 0) {
+    currentPage--;
+    renderPage(currentPage);
+  }
+});
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+  if (currentPage < pages.length - 1) {
+    currentPage++;
+    renderPage(currentPage);
+  }
+});
+
+function updateButtons() {
+  document.getElementById("prevBtn").disabled = currentPage === 0;
+  document.getElementById("nextBtn").disabled = currentPage === pages.length - 1;
+}
+
+loadMarkdown();
+
+
+</script>
+
+</body>
+</html>

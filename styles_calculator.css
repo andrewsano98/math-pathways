@@ -1,0 +1,262 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #1e1e1e;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo img {
+    height: 64px;
+    width: 64px;
+
+    object-fit: contain;
+    display: block;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(247, 247, 247, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1e1e1e;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background-color: #ff4c60;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Featured Section */
+.featured {
+    padding: 50px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.buttons button {
+    height: 65px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+
+    color: white;
+    cursor: pointer;
+
+    position: relative;
+
+    box-shadow: 
+        4px 4px 10px rgba(0, 0, 0, 0.7),
+        inset 1px 1px 2px rgba(255, 255, 255, 0.08),
+        inset -2px -2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.buttons button:hover {
+    background-color: #555;
+}
+
+.calculator {
+    width: 340px;
+    padding: 25px;
+    background: #a1a1a1;
+    border-radius: 25px;
+    box-shadow: 
+        0 15px 30px rgba(0, 0, 0, 0.6),
+        inset 0 2px 5px rgba(255, 255, 255, 0.1),
+        inset 0 -5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#display {
+    width: 95%;
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: right;
+    padding: 10px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        to bottom,
+        #1a1a1a,
+        #0f0f0f
+    );
+
+    color: #00ffcc;
+    font-family: 'Courier New', monospace;
+
+    box-shadow:
+        inset 0 2px 6px rgba(0, 0, 0, 0.9),
+        inset 0 -1px 2px rgba(255, 255, 255, 0.05),
+        0 2px 5px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+    overflow: hidden;
+}
+
+#display::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.15),
+        transparent
+    );
+
+    pointer-events: none;
+}
+
+.buttons button::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    height: 40%;
+    border-radius: 10px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.15),
+        transparent
+    );
+    pointer-events: none;
+}
+
+.buttons button:active {
+    transform: translateY(2px);
+    box-shadow: 
+        inset 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Number buttons */
+.num {
+    background: linear-gradient(145deg, #3a3a3a, #2a2a2a);
+}
+
+/* Operators */
+.op {
+    background: linear-gradient(145deg, #ff9500, #cc7700);
+    color: white;
+}
+
+/* Special buttons */
+.special {
+    background: linear-gradient(145deg, #555, #333);
+}
+
+/* Equals button */
+.equals {
+    background: linear-gradient(145deg, #00c853, #009624);
+    color: white;
+}
+
+.op:hover {
+    background: #ffad33;
+}
+
+.equals:hover {
+    background: #00e676;
+}
+
+/* Abacus */
+
+.abacus {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #5c3b1e;
+  border-radius: 10px;
+}
+
+.rod {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.divider {
+  width: 60px;
+  height: 6px;
+  background: black;
+  margin: 10px 0;
+}
+
+.bead {
+  width: 40px;
+  height: 40px;
+  background: #d35400;
+  border-radius: 50%;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* Active positions */
+.bead.active {
+  transform: translateY(20px);
+}
+
+.bead.top.active {
+  transform: translateY(30px);
+}
+
+.bead.bottom.active {
+  transform: translateY(-30px);
+}
